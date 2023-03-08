@@ -4,7 +4,7 @@
 <div class="md:container">
   <div class="navbar bg-base-100">
       <div class="navbar-start">
-          <a  href="/"class="btn btn-ghost normal-case text-xl bg-cyan-400/40">MedicineChat</a>
+          <a  href="/"class="btn btn-ghost normal-case text-xl bg-cyan-400/40">ChatMedic</a>
         </div>
       <div class="navbar-end">
       <div class="navbar-center hidden lg:flex">
@@ -15,12 +15,12 @@
             </a>
             <ul class="p-2">
               <li><a href="./about">About</a></li>
-              <li><a href="./(app)/contact">Contact</a></li>
-              <li><a href="/(auth)">My Account</a></li>
+              <li><a href="./contact">Contact</a></li>
+              <li><a href="../(auth)/account">My Account</a></li>
             </ul>
           </li>
         </ul>
-        <a  href="/"class="btn normal-case  bg-grey-400/40">Get Started</a>
+        <a  href="./register"class="btn normal-case  bg-grey-400/40">Get Started</a>
         <Dark ></Dark>
         </div>  <!-- navbar normal -->
         
@@ -31,14 +31,14 @@
           </label>
           <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
               <li>
-                <a href="/register" class="justify-between ">
+                <a href="../(auth)/register" class="justify-between ">
                   Get Started
                   <span class="badge">Free</span>
                 </a>
               </li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/(web)/contact">Contact</a></li>
-              <li><a href="../(auth)/account">My account</a></li>
+              <li><a href="./about">About</a></li>
+              <li><a href="./contact">Contact</a></li>
+              <li><a href="../(auth)/account">My Account</a></li>
             </ul>
         </div><!-- dropdown menu -->
     </div><!-- NAVBAR -->

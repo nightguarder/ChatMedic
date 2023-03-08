@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   darkMode: 'class',
@@ -19,5 +20,8 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [require("daisyui")],
+  plugins: [
+    require("daisyui"),
+    require('@tailwindcss/forms'),
+]
 }
