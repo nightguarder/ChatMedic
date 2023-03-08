@@ -1,40 +1,39 @@
-<script lang="ts">
+<script>
     import { browser, dev, version } from '$app/environment';
     //global variable
-    let darkMode = true;
-    //handle dark mode true or false class
-    function SwitchDarkMode(){
-        darkMode = !darkMode;
-
-        darkMode ? document.documentElement.classList.add('dark')
-        : document.documentElement.classList.remove('dark');
+    let boolTheme = true;
+    function toggleTheme() {
+        const htmlElement = document.querySelector('html');
+        let currentTheme = localStorage.getItem('theme')||'light';
+        currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+        htmlElement.setAttribute('data-theme', currentTheme);
+        localStorage.setItem('theme', currentTheme);
     }
-    // true if the app is running in the browser.
     if(browser){
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark')
-        } 
-        else 
-            document.documentElement.classList.remove('dark')
+        if (localStorage.theme === 'dark' ||(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+			boolTheme = true;
+            localStorage.setItem('theme','dark');
+		} 
+        else {
+			boolTheme = false;
+            localStorage.setItem('theme','light');
+		}
     }
-    
 </script>
-<div>
-	<input checked={darkMode} on:click={SwitchDarkMode} type="checkbox" id="theme-toggle" />
-	<label for="theme-toggle" />
-</div>
+	<input checked={boolTheme} on:click={toggleTheme} type="checkbox" id="theme-toggle" />
+	<label class="block mx-2" for="theme-toggle"></label>
 <style lang="postcss">
 	#theme-toggle {
-		@apply invisible;
+		
 	}
 	#theme-toggle + label {
-		@apply inline-block cursor-pointer h-12 w-12 absolute top-6 right-24 rounded-full duration-300 content-[''];
+		@apply  cursor-pointer h-10 w-10  rounded-full duration-300 content-[''];
 	}
 	#theme-toggle:not(:checked) + label {
 		@apply bg-amber-400;
 	}
 	#theme-toggle:checked + label {
 		@apply bg-transparent;
-		box-shadow: inset -18px -16px 1px 1px #fff;
+		box-shadow: inset -18px -16px 1px 1px #ffffff;
 	}
 </style>
