@@ -1,13 +1,17 @@
 <div class="md:container">
     <div class="">
-      <h1 class="text-2xl sm:text-3xl md:text-4xl  mt-6">Welcome to MedicineChat project!</h1>
+      <h1 class="text-2xl sm:text-3xl md:text-4xl  mt-6">Welcome to ChatMedic project!</h1>
       <pre>Powered by GPT 3.5 API</pre>
       <p class="sm:text-xl  mt-3 leading-relaxed">Proceed by logging into the system: 
-         <span class="font-mono bg-gray-200 text-sm sm:text-base  subpixel-antialiased px-1 rounded"> <a href="/login">Login</a></span>
+         <span class="font-mono bg-gray-200 text-sm sm:text-base  subpixel-antialiased px-1 rounded"> <a href="../(auth)/login">Login</a></span>
       <p class="sm:text-xl  mt-3 leading-relaxed">
         If you're new here: 
-        <span class="font-mono bg-gray-200 text-sm sm:text-base  subpixel-antialiased px-1 rounded"><a href="/register">Get Started</a></span> 
+        <span class="font-mono bg-gray-200 text-sm sm:text-base  subpixel-antialiased px-1 rounded"><a href="../(auth)/registerr">Get Started</a></span> 
         </p>
+        <p class="sm:text-xl  mt-3 leading-relaxed">
+          Learn more about the project: 
+          <span class="font-mono bg-gray-200 text-sm sm:text-base  subpixel-antialiased px-1 rounded"><a href="./about">Get Started</a></span> 
+          </p>
     </div><!-- Text -->
   </div><!-- Container -->
   <br><!-- small space -->
@@ -43,16 +47,16 @@
           <div class="flex flex-grow">
             <div>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-8 w-8 md:h-10 md:w-10 md:-my-1">
-                <path class="fill-current " d="M3 6l9 4v12l-9-4V6zm14-3v2c0 1.1-2.24 2-5 2s-5-.9-5-2V3c0 1.1 2.24 2 5 2s5-.9 5-2z" />
-                  <polygon class="fill-current " points="21 6 12 10 12 22 21 18" />
-                  </svg>
+                <path class="fill-current text-gray-400" d="M20.3 12.04l1.01 3a1 1 0 0 1-1.26 1.27l-3.01-1a7 7 0 1 1 3.27-3.27zM11 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                <path class="fill-current text-gray-700" d="M15.88 17.8a7 7 0 0 1-8.92 2.5l-3 1.01a1 1 0 0 1-1.27-1.26l1-3.01A6.97 6.97 0 0 1 5 9.1a9 9 0 0 0 10.88 8.7z" />
+              </svg>
               </div>
                 <div class="flex flex-col leading-relaxed ml-4 md:ml-6">
-                  <h2 class="font-medium  text-lg">Component Examples</h2>
-                  <p class=" mt-1 text-sm md:text-base">Browse pre-built components using Tailwind’s utility classes. </p>
+                  <h2 class="font-medium  text-lg">Contact</h2>
+                  <p class=" mt-1 text-sm md:text-base">Got question? Reach out to us! </p>
                   <div class="pt-1 mt-auto">
                     <a class="inline-flex items-center text-teal-600 hover:text-teal-800" href="https://tailwindcss.com/components">
-                          <span class="text-sm md:text-base font-semibold">Browse examples</span>
+                          <span class="text-sm md:text-base font-semibold">Write a message</span>
                           <svg class="fill-current w-4 h-4 ml-2" viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.2929 1.70711C10.9024 1.31658 10.9024 0.683418 11.2929 0.292893C11.6834 -0.0976311 12.3166 -0.0976311 12.7071 0.292893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L12.7071 11.7071C12.3166 12.0976 11.6834 12.0976 11.2929 11.7071C10.9024 11.3166 10.9024 10.6834 11.2929 10.2929L14.5858 7Z"></path>
                           </svg>
