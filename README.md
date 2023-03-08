@@ -5,14 +5,14 @@ The software is powered by [`GPT-3.5 API`](https://platform.openai.com/docs/mode
 
 ## About
 
-** Goal of this project is to create an Chat AI that will help expert (doctors) during their work. ** 
+**Goal of this project is to create an Chat AI that will help expert (doctors) during their work.** 
 - The AI model should be as accurate as possible, providing feedback to experts while achieving minimal errors.
 - Model is tested by medical experts and their feedback is used to improve the model. 
 
 ## Developing
 
-Entire code is open source. Providing transparency for finding bugs.
-- If you want to participate:
+Entire code is open source. Providing transparency for easier debuging.
+**If you want to participate:**
 > Clone this repository
 ```bash
 git clone git@github.com:nightguarder/MedicalChat
