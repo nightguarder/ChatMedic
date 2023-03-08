@@ -1,21 +1,23 @@
 # ChatMedic
 
 AI help assistant that will support medical experts in their work.
-The software is powered by [`GPT-3.5`](https://platform.openai.com/docs/models/gpt-3-5). 
+The software is powered by [`GPT-3.5 API`](https://platform.openai.com/docs/models/gpt-3-5). 
 
 ## About
 
-Goal of this project is to create an Chat AI that will help expert (doctors) during their work.
-The AI model should be as accurate as possible, providing feedback to experts while achieving minimal errors.
-
+** Goal of this project is to create an Chat AI that will help expert (doctors) during their work. ** 
+- The AI model should be as accurate as possible, providing feedback to experts while achieving minimal errors.
+- Model is tested by medical experts and their feedback is used to improve the model. 
 
 ## Developing
 
-Clone this repository
+Entire code is open source. Providing transparency for finding bugs.
+> If you want to participate:
+- Clone this repository
 ```bash
 git clone git@github.com:nightguarder/MedicalChat
 ```
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
