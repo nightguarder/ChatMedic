@@ -12,13 +12,16 @@ The software is powered by [`GPT-3.5 API`](https://platform.openai.com/docs/mode
 ## Developing
 
 Entire code is open source. Providing transparency for finding bugs.
-> If you want to participate:
-- Clone this repository
+- If you want to participate:
+> Clone this repository
 ```bash
 git clone git@github.com:nightguarder/MedicalChat
 ```
-- Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
+> Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`)
+```bash
+npm i
+```
+> start a development server *local*:
 ```bash
 npm run dev
 ```
