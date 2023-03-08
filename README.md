@@ -1,10 +1,12 @@
 # MedicalChat
 
-AI project  powered by [`GPT-3.5`](https://platform.openai.com/docs/models/gpt-3-5).
+AI help assistant that will support medical experts in their work.
+The software is powered by [`GPT-3.5`](https://platform.openai.com/docs/models/gpt-3-5). 
 
 ## About
 
 Goal of this project is to create an Chat AI that will help expert (doctors) during their work.
+The AI model should be as accurate as possible, providing feedback to experts while achieving minimal errors.
 
 
 ## Developing
