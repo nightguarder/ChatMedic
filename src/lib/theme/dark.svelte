@@ -24,7 +24,7 @@
 	<label class="block mx-2" for="theme-toggle"></label>
 <style lang="postcss">
 	#theme-toggle {
-		
+        @apply invisible
 	}
 	#theme-toggle + label {
 		@apply  cursor-pointer h-10 w-10  rounded-full duration-300 content-[''];
