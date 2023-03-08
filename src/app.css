@@ -5,11 +5,9 @@
 
 @layer base {
 h1 {
-    color: #333;
     @apply text-2xl;
 }
 h2 {
-    color: #333;
     @apply text-xl;
 }
 h3{

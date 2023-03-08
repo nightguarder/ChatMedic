@@ -20,14 +20,14 @@
 		}
     }
 </script>
-	<input checked={boolTheme} on:click={toggleTheme} type="checkbox" id="theme-toggle" />
-	<label class="block mx-2" for="theme-toggle"></label>
+	<input  checked={boolTheme} on:click={toggleTheme} type="checkbox" id="theme-toggle" />
+	<label class="relative m-1 " for="theme-toggle"></label>
 <style lang="postcss">
 	#theme-toggle {
         @apply invisible
 	}
 	#theme-toggle + label {
-		@apply  cursor-pointer h-10 w-10  rounded-full duration-300 content-[''];
+		@apply  cursor-pointer h-10 w-10 p-5  rounded-full duration-300 content-[''];
 	}
 	#theme-toggle:not(:checked) + label {
 		@apply bg-amber-400;
