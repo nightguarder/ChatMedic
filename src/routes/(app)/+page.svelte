@@ -1,22 +1,23 @@
 <div class="md:container">
     <div class="">
       <h1 class="text-2xl sm:text-3xl md:text-4xl  mt-6">Welcome to ChatMedic project!</h1>
-      <pre>Powered by GPT 3.5 API</pre>
+      <pre>AI assistant powered by GPT 3.5 API</pre>
+      <p class="sm:text-xl font-medium mt-3 leading-relaxed">Expert system that will aid you when in doubt.</p>
       <p class="sm:text-xl  mt-3 leading-relaxed">Proceed by logging into the system: 
          <span class="font-mono bg-gray-200 text-sm sm:text-base  subpixel-antialiased px-1 rounded"> <a href="../(auth)/login">Login</a></span>
       <p class="sm:text-xl  mt-3 leading-relaxed">
         If you're new here: 
         <span class="font-mono bg-gray-200 text-sm sm:text-base  subpixel-antialiased px-1 rounded"><a href="../(auth)/registerr">Get Started</a></span> 
         </p>
-        <p class="sm:text-xl  mt-3 leading-relaxed">
+        <p class="sm:text-lg  mt-3 leading-relaxed">
           Learn more about the project: 
           <span class="font-mono bg-gray-200 text-sm sm:text-base  subpixel-antialiased px-1 rounded"><a href="./about">Get Started</a></span> 
           </p>
     </div><!-- Text -->
   </div><!-- Container -->
   <br><!-- small space -->
-  <div class="md:container md:pl-16 pl-0">
-    <div class="bg-gray-100 border-t-2 border-gray-200">
+  <div class="md:container ">
+    <div class="bg-gray-100 rounded border-t-2 border-gray-200">
       <div class="flex flex-wrap">
         <div class="flex flex-col px-12 py-10 w-full sm:w-1/2 sm:border-r sm:border-b border-gray-200">
           <div class="flex flex-grow">
@@ -32,7 +33,7 @@
               <h2 class="font-medium  text-lg">Documentation</h2>
               <p class=" mt-1 text-sm md:text-base">Find out more about the project</p>
               <div class="pt-1 mt-auto">
-                <a class="inline-flex items-center text-teal-600 hover:text-teal-800" href="https://tailwindcss.com/docs">
+                <a class="inline-flex items-center text-cyan-600 hover:text-cyan-800" href="https://tailwindcss.com/docs">
                   <span class="text-sm md:text-base font-semibold">Explore the source code</span>
                   <svg class="fill-current w-4 h-4 ml-2" viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.2929 1.70711C10.9024 1.31658 10.9024 0.683418 11.2929 0.292893C11.6834 -0.0976311 12.3166 -0.0976311 12.7071 0.292893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L12.7071 11.7071C12.3166 12.0976 11.6834 12.0976 11.2929 11.7071C10.9024 11.3166 10.9024 10.6834 11.2929 10.2929L14.5858 7Z"></path>

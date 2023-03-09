@@ -4,7 +4,7 @@
 <div class="md:container">
   <div class="navbar bg-base-100">
       <div class="navbar-start">
-          <a  href="/"class="btn btn-ghost normal-case text-xl bg-cyan-400/40">ChatMedic</a>
+          <a  href="/"class="btn btn-ghost normal-case text-xl bg-cyan-400/80 hover:bg-cyan-300">ChatMedic</a>
         </div>
       <div class="navbar-end">
       <div class="navbar-center hidden lg:flex">
