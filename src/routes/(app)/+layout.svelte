@@ -16,7 +16,7 @@
             <ul class="p-2">
               <li><a href="./about">About</a></li>
               <li><a href="./contact">Contact</a></li>
-              <li><a href="../(auth)/account">My Account</a></li>
+              <li><a href="./login">My Account</a></li>
             </ul>
           </li>
         </ul>
@@ -31,14 +31,14 @@
           </label>
           <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
               <li>
-                <a href="../(auth)/register" class="justify-between ">
+                <a href="./register" class="justify-between ">
                   Get Started
                   <span class="badge">Free</span>
                 </a>
               </li>
               <li><a href="./about">About</a></li>
               <li><a href="./contact">Contact</a></li>
-              <li><a href="../(auth)/account">My Account</a></li>
+              <li><a href="./login">My Account</a></li>
             </ul>
         </div><!-- dropdown menu -->
     </div><!-- NAVBAR -->
