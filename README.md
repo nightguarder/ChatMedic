@@ -11,7 +11,7 @@ The software is powered by [`GPT-3.5 API`](https://platform.openai.com/docs/mode
 
 ## Developing
 
-Entire code is open source. Providing transparency for easier debuging.
+The entire project is open source. Providing transparency for easier debuging.
 **If you want to participate:**
 > Clone this repository
 ```bash
