@@ -4,6 +4,16 @@
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
+		 <script>
+			const THEME_ATTRIBUTE = 'data-theme'
+      const currentTheme =
+        document.cookie
+          .split('; ')
+          .find((row) => row.startsWith('theme='))
+          ?.split('=')?.[1] || 'light'
+
+      document.querySelector('html')?.setAttribute(THEME_ATTRIBUTE, currentTheme)
+		 </script>
 		%sveltekit.head%
 	</head>
 	<body class="antialiased"data-sveltekit-preload-data="hover">
