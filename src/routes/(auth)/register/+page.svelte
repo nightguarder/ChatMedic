@@ -6,7 +6,7 @@
     </div>
 </div>
 <div class="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-    <div class="overflow-hidden bg-white w-1/4 shadow-xl sm:rounded-lg">
+    <div class="overflow-hidden bg-white w-1/4 shadow-xl sm:rounded-lg py-8">
     <div class="w-full md:w-auto space-y-8">
       <div>
         <img class="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=cyan&shade=600" alt="Your Company">
@@ -17,7 +17,7 @@
       </div>
       <form method="POST" action="?/register" class="flex flex-col items-center space-y-2 w-full">
         <div class="form-control w-full max-w-xs">
-            <label for="name" class="label font-medium pb-1">
+            <label for="name" class=" text-base label font-medium pb-1">
                 <span class="label-text">Full Name</span>
             </label>
             <input type="text" name="name" class="input input-bordered w-full max-w-xs" />
@@ -26,13 +26,22 @@
             <label for="email" class="label font-medium pb-1">
                 <span class="label-text">Email</span>
             </label>
-            <input type="email" name="email" class="input input-bordered w-full max-w-xs" />
+            <input type="email" name="email"
+                required 
+                class="input input-bordered w-full max-w-xs
+                invalid:border-pink-rose invalid:text-rose-600
+                focus:invalid:border-rose-500 focus:invalid:ring-rose-500" 
+                placeholder="yourname@gmail.com" />
         </div>
         <div class="form-control w-full max-w-xs">
             <label for="password" class="label font-medium pb-1">
                 <span class="label-text">Password</span>
             </label>
-            <input type="password" name="password" class="input input-bordered w-full max-w-xs" />
+            <input type="password" 
+                name="password"
+                required 
+                class="input input-bordered w-full max-w-xs " 
+                placeholder="************" />
         </div>
         <div class="form-control w-full max-w-xs">
             <label for="passwordConfirm" class="label font-medium pb-1">
@@ -40,8 +49,10 @@
             </label>
             <input
                 type="password"
+                required
                 name="passwordConfirm"
-                class="input input-bordered w-full max-w-sm"
+                class="input input-bordered w-full max-w-sm required"
+                placeholder="************"
             />
         </div>
         <div class="w-full max-w-xs pt-3">

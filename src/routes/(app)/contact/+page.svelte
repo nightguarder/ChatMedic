@@ -51,7 +51,7 @@
             </ul>
           </div>
           <div class="relative mt-8 flex items-center gap-x-4">
-            <img src="https://drive.google.com/uc?export=view&id=154lSy_I67jl4WewW4QPWj_A8pz_xaDZe" alt="profile picture" class="h-10 w-10 rounded-full bg-gray-50">
+            <img src="https://drive.google.com/uc?id=1tk_Vz_7mZ52qi7DLePl6LWQpKu3pdTll" alt="profile picture" class="h-10 w-10 rounded-full bg-gray-50">
             <div class="text-sm leading-6">
               <p class="font-semibold text-gray-900">
                 <a target="_blank" rel="noreferrer" href="https://www.stegerova.cz">

@@ -11,7 +11,7 @@
         </p>
         <p class="sm:text-lg  mt-3 leading-relaxed">
           Learn more about the project: 
-          <span class="font-mono bg-gray-200 text-sm sm:text-base  subpixel-antialiased px-1 rounded"><a href="./about">Get Started</a></span> 
+          <span class="font-mono bg-gray-200 text-sm sm:text-base  subpixel-antialiased px-1 rounded"><a href="./about">About</a></span> 
           </p>
     </div><!-- Text -->
   </div><!-- Container -->
