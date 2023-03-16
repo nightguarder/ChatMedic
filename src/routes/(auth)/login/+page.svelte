@@ -20,13 +20,6 @@
   <body class="h-full">
   ```
 -->
-<div class="md:container">
-  <div class="navbar bg-base-100">
-      <div class="navbar-start">
-          <a  href="/" class="btn btn-ghost normal-case text-xl bg-cyan-400/80 hover:bg-cyan-300">ChatMedic</a>
-        </div>
-  </div>
-</div>
 <div class="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
     <div class="w-full max-w-md space-y-8">
       <div>

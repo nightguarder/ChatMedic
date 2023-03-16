@@ -21,7 +21,7 @@
           </li>
         </ul>
         <a  href="./register"class="btn normal-case  bg-grey-400/40">Get Started</a>
-        <Dark ></Dark>
+        <Dark ></Dark><!-- Dark Mode -->
         </div>  <!-- navbar normal -->
         
       </div><!-- navbar end -->

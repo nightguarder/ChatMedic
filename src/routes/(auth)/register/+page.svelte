@@ -1,17 +1,12 @@
-<div class="md:container">
-    <div class="navbar bg-base-100">
-        <div class="navbar-start">
-            <a  href="/" class="btn btn-ghost normal-case text-xl bg-cyan-400/80 hover:bg-cyan-300">ChatMedic</a>
-          </div>
-    </div>
-</div>
+<script>
+</script>
 <div class="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-    <div class="overflow-hidden bg-white w-1/4 shadow-xl sm:rounded-lg py-8">
-    <div class="w-full md:w-auto space-y-8">
-      <div>
+    <div class="overflow-hidden w-2/3 md:-w-full shadow-xl sm:rounded-lg px-2 py-8">
+    <div class="w-full md:w-auto space-y-4">
+      <div class="space-y-3">
         <img class="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=cyan&shade=600" alt="Your Company">
-        <h2 class="mt-2 text-center text-3xl font-bold tracking-tight text-gray-900">Register for an account</h2>
-        <p class="mt-1 text-center text-gray-600">
+        <h2 class="mt-2 text-center text-3xl font-bold tracking-tight ">Register for an account</h2>
+        <p class="mt-1 text-center text-gray-500">
           Or <a href="./login" class="font-medium text-cyan-600 hover:text-cyan-800">sign in</a> If you already have an account
         </p>
       </div>
@@ -20,7 +15,7 @@
             <label for="name" class=" text-base label font-medium pb-1">
                 <span class="label-text">Full Name</span>
             </label>
-            <input type="text" name="name" class="input input-bordered w-full max-w-xs" />
+            <input type="text" name="name" class="input input-bordered input-md sm:input-sm xl:input-md w-full max-w-xs" />
         </div>
         <div class="form-control w-full max-w-xs">
             <label for="email" class="label font-medium pb-1">
@@ -55,8 +50,8 @@
                 placeholder="************"
             />
         </div>
-        <div class="w-full max-w-xs pt-3">
-            <button class="btn btn-primary w-full max-w-xs">Register</button>
+        <div class="flex max-w-xs w-full pt-3 py-3">
+            <button class="btn btn-primary btn-md w-full sm:btn-sm md:btn-md">Register</button>
         </div>
     </form><!-- FORM INPUTS -->
     </div><!-- space-y-8 -->
