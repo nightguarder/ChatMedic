@@ -37,7 +37,7 @@
         <div class="form-control w-full max-w-xs">
             <div class="flex items-center justify between ">
               <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-cyan-600 focus:ring-cyan-600">
-              <label for="remember-me" class="ml-2 block text-sm text-gray-900">Remember me</label>
+              <label for="remember-me" class="ml-2 block text-sm text-gray-500">Remember me</label>
             </div>
           </div>
           
