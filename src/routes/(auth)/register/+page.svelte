@@ -7,41 +7,43 @@
         <img class="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=cyan&shade=600" alt="Your Company">
         <h2 class="mt-2 text-center text-3xl font-bold tracking-tight ">Register for an account</h2>
         <p class="mt-1 text-center text-gray-500">
-          Or <a href="./login" class="font-medium text-cyan-600 hover:text-cyan-800">sign in</a> If you already have an account
+          Already have an account?  <a href="./login" class="font-medium text-cyan-600 hover:text-cyan-800">Sign in</a> 
         </p>
       </div>
       <form method="POST" action="?/register" class="flex flex-col items-center space-y-2 w-full">
         <div class="form-control w-full max-w-xs">
-            <label for="name" class=" text-base label font-medium pb-1">
-                <span class="label-text">Full Name</span>
+            <label class="input-group input-group-vertical pb-1">
+                <span>Full name</span>
+            <input type="text" name="name" 
+            placeholder="John Doe"
+            class="input input-bordered input-md sm:input-sm xl:input-md w-full max-w-xs" />
             </label>
-            <input type="text" name="name" class="input input-bordered input-md sm:input-sm xl:input-md w-full max-w-xs" />
         </div>
         <div class="form-control w-full max-w-xs">
-            <label for="email" class="label font-medium pb-1">
-                <span class="label-text">Email</span>
-            </label>
-            <input type="email" name="email"
+              <label class="input-group input-group-vertical pb-1">
+                <span>Your Email</span>
+                <input type="email" name="email"
                 required 
                 class="input input-bordered w-full max-w-xs
                 invalid:border-pink-rose invalid:text-rose-600
                 focus:invalid:border-rose-500 focus:invalid:ring-rose-500" 
-                placeholder="yourname@gmail.com" />
+                placeholder="john21doe@gmail.com" />
+              </label>
+            
         </div>
         <div class="form-control w-full max-w-xs">
-            <label for="password" class="label font-medium pb-1">
-                <span class="label-text">Password</span>
-            </label>
+            <label for="password" class="input-group input-group-vertical">
+                <span>Password</span>
             <input type="password" 
                 name="password"
                 required 
                 class="input input-bordered w-full max-w-xs " 
                 placeholder="************" />
+            </label>
         </div>
         <div class="form-control w-full max-w-xs">
-            <label for="passwordConfirm" class="label font-medium pb-1">
-                <span class="label-text">Confirm Password</span>
-            </label>
+            <label for="passwordConfirm" class="input-group input-group-vertical">
+                <span>Confirm password</span>
             <input
                 type="password"
                 required
@@ -49,6 +51,7 @@
                 class="input input-bordered w-full max-w-sm required"
                 placeholder="************"
             />
+            </label>
         </div>
         <div class="flex max-w-xs w-full pt-3 py-3">
             <button class="btn btn-primary btn-md w-full sm:btn-sm md:btn-md">Register</button>
