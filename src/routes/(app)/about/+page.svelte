@@ -10,12 +10,11 @@
     </p>
     <br>
     <div class="py-2">
-        <div class="flex items-center space-between space-x-3">
+        
     <a href="#phase1" class="text-center w-full px-8 py-4 mt-2 text-base text-white bg-teal-500 rounded-md md:mb-0 hover:bg-teal-600 md:w-auto" data-rounded="rounded-md" >View Roadmap</a>
     <a href="./contact" class="text-center w-full px-8 py-4 mt-2 text-base text-white bg-cyan-500 rounded-md md:mb-0 hover:bg-cyan-600 md:w-auto" data-primary="cyan-500" data-rounded="rounded-md">
         Meet the team
     </a>
-        </div>
 </div>
 
 </section>
