@@ -3,8 +3,8 @@
 </script>
 <div class=" whitespace-pre-line space-y-2 max-w-4xl mx-auto py-16 px-10 sm:py-22 sm:px-6 lg:px-8 sm:text-center" contenteditable="false">
   <h1 class="text-4xl font-extrabold tracking-tight  sm:text-5xl sm:tracking-tight lg:text-6xl"> {pageTitle}</h1>
-  <p class="lead-relaxed first-letter:text-2xl first-word:text-3xl max-w-3xl py-5  mt-5 mx-auto text-xl text-xltext-gray-500">If you have any questions or run into problems. Reach out to one of the developers.
-      </p>
+  <p class="lead-relaxed first-letter:text-2xl  max-w-3xl py-5 mt-5 mx-auto text-xl">If you have any questions or run into problems. Reach out to one of the developers.</p>
+  <p class="lead-relaxed  max-w-3xl py-5 mt-5 mx-auto sm:text-base md:text-lg">The goal of the ChatMedic project is to provide medical professionals with a reliable, accurate, and easy-to-use AI assistant that can help them make informed decisions and provide the best possible care to their patients.</p>
   <a href="./contact" class="text-center w-full px-8 py-4 mt-2 text-base text-white bg-cyan-500 rounded-md md:mb-0 hover:bg-cyan-600 md:w-auto" data-primary="cyan-500" data-rounded="rounded-md">
       Team members
   </a>
