@@ -1,7 +1,7 @@
 <script>
     export let pageTitle = "About Us"
 </script>
-<section class="snap-start h-screen snap-normal" id="home">
+<section class="snap-start min-h-screen snap-normal" id="home">
 <div class=" whitespace-pre-line space-y-2 max-w-4xl mx-auto py-16 px-10 sm:py-22 sm:px-6 lg:px-8 sm:text-center w-screen h-screen" contenteditable="false">
     <h1 class="font-extrabold  text-6xl sm:text-4xl  lg:text-6xl"> {pageTitle}</h1>
     <h2 class="text-lg sm:text-base text-transparent font-semibold bg-clip-text bg-gradient-to-br from-cyan-600 to-cyan-500 tracking-wide uppercase">Project “chatmedic"</h2>
@@ -17,7 +17,7 @@
     </a>
 </div>
 </section>
-<section class="snap-start h-screen snap-normal" id="phase1">
+<section class="snap-start min-h-screen snap-normal" id="phase1">
 <div class=" whitespace-pre-line space-y-2 max-w-7xl mx-auto py-16 px-10 sm:py-22 sm:px-6 lg:px-8 sm:text-center w-screen h-screen" contenteditable="false">
     <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">Development</h1> <h2 class="text-base font-semibold text-teal-600 tracking-wide uppercase">Phase 1</h2> 
     <p class="lead-relaxed first-letter:text-2xl first-word:text-3xl max-w-3xl py-5 mt-5 mx-auto text-xl text-gray-500">First <em>beta</em>  release and analysis by experts.</p>
