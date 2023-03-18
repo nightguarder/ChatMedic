@@ -8,14 +8,16 @@
     <p class="lead-relaxed first-letter:text-2xl first-line:text-xl max-w-3xl py-5  mt-5 mx-auto text-xl text-xltext-gray-500">Until now, experts had to rely on their reasoning to treat their patients. 
         <span class=" font-bold relative mt-2 text-transparent bg-clip-text bg-gradient-to-br from-teal-600 to-teal-500 md:inline-block">This changes now.</span>
     </p>
-    svg here
     <br>
     <div class="py-2">
+        <div class="flex items-center space-between space-x-3">
     <a href="#phase1" class="text-center w-full px-8 py-4 mt-2 text-base text-white bg-teal-500 rounded-md md:mb-0 hover:bg-teal-600 md:w-auto" data-rounded="rounded-md" >View Roadmap</a>
     <a href="./contact" class="text-center w-full px-8 py-4 mt-2 text-base text-white bg-cyan-500 rounded-md md:mb-0 hover:bg-cyan-600 md:w-auto" data-primary="cyan-500" data-rounded="rounded-md">
         Meet the team
     </a>
+        </div>
 </div>
+
 </section>
 <section class="snap-start min-h-screen snap-normal" id="phase1">
 <div class=" whitespace-pre-line space-y-2 max-w-7xl mx-auto py-16 px-10 sm:py-22 sm:px-6 lg:px-8 sm:text-center w-screen h-screen" contenteditable="false">
