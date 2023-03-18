@@ -1,9 +1,11 @@
 <script>
-  export let pageTitle =  "ChatMedic";
+  export let pageTitle = "ChatMedic";
 </script>
+<section class="snap-start h-screen snap-normal" id="home">
+
 <div class="md:container md:mx-auto max-w-lg px-4 py-32 mx-auto mt-px text-left md:max-w-none md:text-center">
   <h1 class="text-5xl font-extrabold leading-10 tracking-tight text-left text-gray-900 md:text-center sm:leading-none sm:text-4xl md:text-5xl lg:text-6xl"><span class="inline md:block">Welcome to {pageTitle}!</span></h1>
-  <h2 class=" mt-2 text-lg sm:text-base text-transparent font-semibold bg-clip-text bg-gradient-to-br from-cyan-600 to-cyan-500 tracking-wide uppercase">
+  <h2 class="mt-2 text-lg sm:text-base text-transparent font-semibold bg-clip-text bg-gradient-to-br from-cyan-600 to-cyan-500 tracking-wide uppercase">
     Ai Assistant powered by <em>GPT 3.5</em>
   </h2>
   <div class="mx-auto mt-5 text-gray-500 md:mt-12 md:max-w-lg md:text-center lg:text-lg">
@@ -12,10 +14,11 @@
   </div>
   <br>
   <div class="py-2">
-    <a href="#snap-start" class="text-center w-full px-8 py-4 mt-2 text-base text-white bg-teal-500 rounded-md md:mb-0 hover:bg-teal-600 md:w-auto" data-rounded="rounded-md" >Start here</a>
+    <a href="#one" class="btn btn-primary normal-case text-center w-full px-8 py-4 mt-2 text-white rounded-md md:mb-0 hover:bg-cyan-600 md:w-auto" data-rounded="rounded-md" >Start Here</a>
 </div>
 </div><!-- Text -->
-
+</section><!-- Home -->
+<section class="h-screen snap-start snap-normal" id="one">
 <div class="max-w-7xl px-10 mx-auto sm:text-center">
     <p class="text-teal-600 font-medium uppercase">Project overview</p>
     <h2 class="font-bold text-2xl sm:text-2xl lg:text-4xl mt-3">Proceed by one of the following:</h2>
@@ -80,3 +83,4 @@
           </a>
     </div> <!-- Grid -->
   </div><!-- Container -->
+</section><!-- two -->
