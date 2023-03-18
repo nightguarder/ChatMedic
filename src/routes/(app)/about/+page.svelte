@@ -1,4 +1,22 @@
-<div class="md:container display:block antialyased ">
-    <h1 class="font-medium text-left">About </h1>
-    <p class="sm:text-lg leading-relaxed  text-gray-900">Project pioneered to help medical experts in their work.</p>
+<script>
+    export let pageTitle = "About Us"
+</script>
+<div class="snap-y snap-proximity overflow-scroll">
+<div class="snap-start whitespace-pre-line space-y-2 max-w-4xl mx-auto py-16 px-10 sm:py-22 sm:px-6 lg:px-8 sm:text-center w-screen h-screen" contenteditable="false">
+    <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl"> {pageTitle}</h1>
+    <h2 class="text-base font-semibold text-teal-600 tracking-wide uppercase">Project “chatmedic"</h2>
+    <p class="lead-relaxed first-letter:text-2xl first-word:text-3xl max-w-3xl py-5  mt-5 mx-auto text-xl text-xltext-gray-500">Until now, experts had to rely on their reasoning to treat their patients. 
+        <strong class="text-2xl">This changes now.</strong></p>
+    <p class="lead-relaxed max-w-3xl mt-5 mx-auto text-xl text-gray-500">The goal of the ChatMedic project is to provide medical professionals with a reliable, accurate, and easy-to-use AI assistant that can help them make informed decisions and provide the best possible care to their patients.</p>
+    <br>
+    <a href="#snap-start" class="text-center w-full px-8 py-4 mt-2 text-base text-white bg-teal-500 rounded-md md:mb-0 hover:bg-teal-600 md:w-auto" data-rounded="rounded-md" >View Roadmap</a>
+    <a href="./contact" class="text-center w-full px-8 py-4 mt-2 text-base text-white bg-cyan-500 rounded-md md:mb-0 hover:bg-cyan-600 md:w-auto" data-primary="cyan-500" data-rounded="rounded-md">
+        Meet the team
+    </a>
+</div>
+<div class="snap-center whitespace-pre-line space-y-2 max-w-7xl mx-auto py-16 px-10 sm:py-22 sm:px-6 lg:px-8 sm:text-center w-screen h-screen" contenteditable="false">
+    <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">Development</h1> <h2 class="text-base font-semibold text-teal-600 tracking-wide uppercase">Phase 1</h2> 
+    <p class="lead-relaxed first-letter:text-2xl first-word:text-3xl max-w-3xl py-5 mt-5 mx-auto text-xl text-xltext-gray-500">Core development of the application takes place.</p> <p class="lead-relaxed max-w-3xl mt-5 mx-auto text-xl text-gray-500">During this phase, we will be working on developing the core features of the AI assistant, including its ability to understand natural language, learn from trusted sources, and provide accurate and reliable guidance to medical professionals.</p> 
+    <br> 
+    <a href="#snap-start" class="mt-2 px-8 py-4 sm:w-auto w-full text-center text-base font-medium inline-block rounded text-white hover:bg-cyna-600 bg-cyan-500">Next Phase</a></div>
 </div>

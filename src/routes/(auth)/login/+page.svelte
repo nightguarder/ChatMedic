@@ -36,8 +36,11 @@
         
         <div class="form-control w-full max-w-xs">
             <div class="flex items-center justify between ">
-              <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-cyan-600 focus:ring-cyan-600">
-              <label for="remember-me" class="ml-2 block text-sm text-gray-500">Remember me</label>
+                  <label class="cursor-pointer label">
+                    <input id="remember-me" type="checkbox" class="bg-transparent checkbox checkbox-info" />
+                    <span class="label-text font-medium text-gray-500 hover:text-gray-400 ml-2"> Remember me</span>
+                  </label>
+                
             </div>
           </div>
           

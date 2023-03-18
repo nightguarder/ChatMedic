@@ -10,7 +10,6 @@
         <span class="font-mono bg-gray-200 text-sm sm:text-base  subpixel-antialiased px-1 rounded"><a href="./contact">Contact</a></span> 
         <span class="font-mono bg-gray-200 text-sm sm:text-base  subpixel-antialiased px-1 rounded"><a href="https://github.com/nightguarder/ChatMedic">Documentation</a></span> 
   
-  
       </div><!-- Text -->
   </div><!-- Container -->
   <br><!-- small space -->
@@ -78,11 +77,11 @@
               </svg>             
             </div>
             <div class="leading-relaxed flex flex-col ml-4 md:ml-6">
-              <h2 class="font-medium  text-lg">Documentation</h2>
+              <h2 class="font-medium  text-lg">About</h2>
               <p class=" mt-1 text-sm md:text-base">Find out more about the project</p>
               <div class="pt-1 mt-auto">
-                <a class="inline-flex items-center text-cyan-600 hover:text-cyan-800" href="https://github.com/nightguarder/ChatMedic">
-                  <span class="text-sm md:text-base font-semibold">Explore the source code</span>
+                <a class="inline-flex items-center text-cyan-600 hover:text-cyan-800" href="./about">
+                  <span class="text-sm md:text-base font-semibold">Learn more</span>
                   <svg class="fill-current w-4 h-4 ml-2" viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.2929 1.70711C10.9024 1.31658 10.9024 0.683418 11.2929 0.292893C11.6834 -0.0976311 12.3166 -0.0976311 12.7071 0.292893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L12.7071 11.7071C12.3166 12.0976 11.6834 12.0976 11.2929 11.7071C10.9024 11.3166 10.9024 10.6834 11.2929 10.2929L14.5858 7Z"></path>
                   </svg>
@@ -104,7 +103,7 @@
               <h2 class="font-medium  text-lg">Contact</h2>
               <p class=" mt-1 text-sm md:text-base">Got a question? Write us a message.</p>
               <div class="pt-1 mt-auto">
-                <a class="inline-flex items-center text-cyan-600 hover:text-cyan-800" href="https://tailwindcss.com/docs">
+                <a class="inline-flex items-center text-cyan-600 hover:text-cyan-800" href="./contact">
                   <span class="text-sm md:text-base font-semibold">Reach out to us!</span>
                   <svg class="fill-current w-4 h-4 ml-2" viewBox="0 0 18 12" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5858 7H1C0.447715 7 0 6.55228 0 6C0 5.44772 0.447715 5 1 5H14.5858L11.2929 1.70711C10.9024 1.31658 10.9024 0.683418 11.2929 0.292893C11.6834 -0.0976311 12.3166 -0.0976311 12.7071 0.292893L17.7071 5.29289C18.0976 5.68342 18.0976 6.31658 17.7071 6.70711L12.7071 11.7071C12.3166 12.0976 11.6834 12.0976 11.2929 11.7071C10.9024 11.3166 10.9024 10.6834 11.2929 10.2929L14.5858 7Z"></path>
