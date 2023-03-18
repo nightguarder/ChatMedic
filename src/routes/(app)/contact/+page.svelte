@@ -2,11 +2,11 @@
   export let pageTitle = "Contact"
 </script>
 <div class=" whitespace-pre-line space-y-2 max-w-4xl mx-auto py-16 px-10 sm:py-22 sm:px-6 lg:px-8 sm:text-center" contenteditable="false">
-  <h1 class="text-4xl font-extrabold  sm:text-5xl sm:tracking-tight lg:text-6xl"> {pageTitle}</h1>
+  <h1 class="text-4xl font-extrabold tracking-tight  sm:text-5xl sm:tracking-tight lg:text-6xl"> {pageTitle}</h1>
   <p class="lead-relaxed first-letter:text-2xl first-word:text-3xl max-w-3xl py-5  mt-5 mx-auto text-xl text-xltext-gray-500">If you have any questions or run into problems. Reach out to one of the developers.
       </p>
   <a href="./contact" class="text-center w-full px-8 py-4 mt-2 text-base text-white bg-cyan-500 rounded-md md:mb-0 hover:bg-cyan-600 md:w-auto" data-primary="cyan-500" data-rounded="rounded-md">
-      View Contact
+      Team members
   </a>
 </div>
 <div class="  max-w-4xl mx-auto py-16 px-4 sm:py-22 sm:px-6 lg:px-8">

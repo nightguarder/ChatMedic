@@ -3,16 +3,19 @@
 </script>
 <div class="snap-y snap-proximity overflow-scroll">
 <div class="snap-start whitespace-pre-line space-y-2 max-w-4xl mx-auto py-16 px-10 sm:py-22 sm:px-6 lg:px-8 sm:text-center w-screen h-screen" contenteditable="false">
-    <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl"> {pageTitle}</h1>
-    <h2 class="text-base font-semibold text-teal-600 tracking-wide uppercase">Project “chatmedic"</h2>
-    <p class="lead-relaxed first-letter:text-2xl first-word:text-3xl max-w-3xl py-5  mt-5 mx-auto text-xl text-xltext-gray-500">Until now, experts had to rely on their reasoning to treat their patients. 
-        <strong class="text-2xl">This changes now.</strong></p>
-    <p class="lead-relaxed max-w-3xl mt-5 mx-auto text-xl text-gray-500">The goal of the ChatMedic project is to provide medical professionals with a reliable, accurate, and easy-to-use AI assistant that can help them make informed decisions and provide the best possible care to their patients.</p>
+    <h1 class="font-extrabold  text-6xl sm:text-4xl  lg:text-6xl"> {pageTitle}</h1>
+    <h2 class="text-lg sm:text-base text-transparent font-semibold bg-clip-text bg-gradient-to-br from-cyan-600 to-cyan-500 tracking-wide uppercase">Project “chatmedic"</h2>
+    <p class="lead-relaxed first-letter:text-2xl first-line:text-xl max-w-3xl py-5  mt-5 mx-auto text-xl text-xltext-gray-500">Until now, experts had to rely on their reasoning to treat their patients. 
+        <span class=" font-bold relative mt-2 text-transparent bg-clip-text bg-gradient-to-br from-teal-600 to-teal-500 md:inline-block">This changes now.</span>
+        </p>
+    <p class="lead-relaxed max-w-3xl mt-5 mx-auto sm:text-base md:text-lg text-gray-500">The goal of the ChatMedic project is to provide medical professionals with a reliable, accurate, and easy-to-use AI assistant that can help them make informed decisions and provide the best possible care to their patients.</p>
     <br>
+    <div class="py-2">
     <a href="#snap-start" class="text-center w-full px-8 py-4 mt-2 text-base text-white bg-teal-500 rounded-md md:mb-0 hover:bg-teal-600 md:w-auto" data-rounded="rounded-md" >View Roadmap</a>
     <a href="./contact" class="text-center w-full px-8 py-4 mt-2 text-base text-white bg-cyan-500 rounded-md md:mb-0 hover:bg-cyan-600 md:w-auto" data-primary="cyan-500" data-rounded="rounded-md">
         Meet the team
     </a>
+</div>
 </div>
 <div class="snap-center whitespace-pre-line space-y-2 max-w-7xl mx-auto py-16 px-10 sm:py-22 sm:px-6 lg:px-8 sm:text-center w-screen h-screen" contenteditable="false">
     <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">Development</h1> <h2 class="text-base font-semibold text-teal-600 tracking-wide uppercase">Phase 1</h2> 
