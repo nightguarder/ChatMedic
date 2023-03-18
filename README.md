@@ -3,6 +3,8 @@
 AI help assistant that will support medical experts in their work.
 The software is powered by [`GPT-3.5 API`](https://platform.openai.com/docs/models/gpt-3-5). 
 
+![main page](src/lib/img/main_page.png)
+
 ## About
 
 **Goal of this project is to create an Chat AI that will help expert (doctors) during their work.** 
