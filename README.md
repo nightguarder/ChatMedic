@@ -1,7 +1,9 @@
 # ChatMedic
+> AI help assistant that will support medical experts in their work.
+The software is powered by [`GPT-3.5 API`](https://platform.openai.com/docs/models/gpt-3-5).
 
-AI help assistant that will support medical experts in their work.
-The software is powered by [`GPT-3.5 API`](https://platform.openai.com/docs/models/gpt-3-5). 
+
+The current ``release version`` is available [online](https://chat-medic-assistant.vercel.app/). 
 
 ![main page](src/lib/img/main_page.png)
 
