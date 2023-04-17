@@ -1,19 +1,30 @@
 <script>
   export let pageTitle = "Contact"
 </script>
-<div class=" whitespace-pre-line space-y-2 max-w-4xl mx-auto py-16 px-10 sm:py-22 sm:px-6 lg:px-8 sm:text-center" contenteditable="false">
-  <h1 class="text-4xl font-extrabold tracking-tight  sm:text-5xl sm:tracking-tight lg:text-6xl"> {pageTitle}</h1>
-  <p class="lead-relaxed first-letter:text-2xl  max-w-3xl py-5 mt-5 mx-auto text-xl">If you have any questions or run into problems. Reach out to one of the developers.</p>
-  <p class="lead-relaxed  max-w-3xl py-5 mt-5 mx-auto sm:text-base md:text-lg">The goal of the ChatMedic project is to provide medical professionals with a reliable, accurate, and easy-to-use AI assistant that can help them make informed decisions and provide the best possible care to their patients.</p>
-  <a href="./contact" class="text-center w-full px-8 py-4 mt-2 text-base text-white bg-cyan-500 rounded-md md:mb-0 hover:bg-cyan-600 md:w-auto" data-primary="cyan-500" data-rounded="rounded-md">
-      Team members
-  </a>
-</div>
-<div class="  max-w-4xl mx-auto py-16 px-4 sm:py-22 sm:px-6 lg:px-8">
+<section class="snap-start min-h-screen snap-normal overflox-scroll" id="contact">
+  <div class="md:container md:mx-auto max-w-lg px-4 py-32 mx-auto mt-px text-left md:max-w-none md:text-center">
+    <h1 class="text-5xl font-extrabold leading-10 tracking-tight text-left md:text-center sm:leading-none sm:text-4xl md:text-5xl lg:text-6xl"><span class="inline md:block">{pageTitle}</span></h1>
+    <h2 class="mt-2 text-xl sm:text-base text-transparent font-semibold bg-clip-text bg-gradient-to-br from-cyan-600 to-cyan-500 tracking-wide uppercase">
+      Reach out to us!
+    </h2>
+    <div class="mx-auto mt-5 lead-relaxed text-gray-500">
+      <p class=" whitespace-pre-line lead-relaxed first-letter:text-2xl max-w-3xl py-5 mt-5 mx-auto text-xl">If you have any questions or run into problems during testing, 
+        reach out to one of the developers.</p>
+    </div>
+    <br>
+    <div class="py-2">
+      <a href="#team" class="btn btn-primary normal-case text-center w-full px-8 py-4 mt-2 text-white rounded-md md:mb-0 hover:bg-cyan-600 md:w-auto" data-rounded="rounded-md" >Team Members</a>
+  </div>
+  </div><!-- Text -->
+  </section><!-- Contact -->
+<section class="snap-start min-h-screen snap-normal" id="team">
+  
+<div class="max-w-4xl mx-auto py-16 px-4 sm:py-22 sm:px-6 lg:px-8">
+  <h1 class="text-5xl font-extrabold leading-10 tracking-tight text-left md:text-center sm:leading-none sm:text-4xl md:text-5xl lg:text-6xl"><span class="inline md:block">Our Team</span></h1>
   <div class="mx-auto mt-10 grid max-w-4xl grid-cols-1 gap-y-16 gap-x-8 border-t border-white-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
     <article class="flex max-w-xl flex-col items-start justify-between">
       <div class="flex items-center gap-x-4 text-xs">
-        <time datetime="2020-03-16" class="text-gray-500">Mar 5, 2023</time>
+        <time datetime="2023-03-05" class="text-gray-500">Mar 5, 2023</time>
         <a href="../about" class="relative z-10 rounded-full bg-gray-50 py-1.5 px-3 font-medium hover:bg-gray-100">Development</a>
       </div>
       <div class="group relative">
@@ -42,7 +53,7 @@
     </article>
     <article class="flex max-w-xl flex-col items-start justify-between">
       <div class="flex items-center gap-x-4 text-xs">
-        <time datetime="2020-03-16" class="text-gray-500">Mar 10, 2023</time>
+        <time datetime="2023-03-05" class="text-gray-500">Mar 10, 2023</time>
         <a href="../about" class="relative z-10 rounded-full bg-gray-50 py-1.5 px-3 font-medium hover:bg-gray-100">Expert</a>
       </div>
       <div class="group relative">
@@ -70,3 +81,4 @@
     </article> <!-- Expert -->
   </div>
 </div>
+</section>

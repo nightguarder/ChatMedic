@@ -83,4 +83,9 @@
           </a>
     </div> <!-- Grid -->
   </div><!-- Container -->
+  <div class="max-w-7xl px-10 mx-auto text-center items-center">
+    <div class="mx-auto mt-5 text-gray-500 md:mt-12 md:max-w-lg md:text-center lg:text-lg">
+      <p class="lead-relaxed py-5 max-w-lg sm:text-base md:text-lg text-center">The goal of the ChatMedic project is to provide medical professionals with a reliable, accurate, and easy-to-use AI assistant that can help them make informed decisions and provide the best possible care to their patients.</p>
+    </div>
+  </div>
 </section><!-- two -->
