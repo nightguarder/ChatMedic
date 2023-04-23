@@ -13,8 +13,7 @@
 				<ul class="menu menu-horizontal dropdown-content  font-medium px-2 bg-base-100">
 					<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 					<li tabindex="0">
-						<a
-							>Menu
+						<a>Menu
 							<svg
 								class="fill-current"
 								xmlns="http://www.w3.org/2000/svg"
