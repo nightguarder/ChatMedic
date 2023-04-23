@@ -10,6 +10,7 @@ export const actions = {
 		//email has to be verified before login
 		try {
 			await locals.pb.collection('users').create({ username, ...body });
+
 			await locals.pb.collection('users').requestVerification(body.email);
 		} catch {
 			//Return error
