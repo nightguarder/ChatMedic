@@ -4,8 +4,8 @@ import { generateUsername } from '../../../lib/utils.js';
 export const actions = {
 	register: async ({ locals, request }) => {
 		const body = Object.fromEntries(await request.formData());
-
-		let username = generateUsername(body.name.split(' ').join('')).toLowerCase();
+		let username = generateUsername(body.name.split(' ').join(' ')).toLowerCase();
+		//console.log("username=" + username);
 		//get data from form and push them to pb
 		//email has to be verified before login
 		try {
