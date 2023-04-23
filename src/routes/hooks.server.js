@@ -1,12 +1,14 @@
 import PocketBase from 'pocketbase';
-import { serializeNonPOJOs } from './lib/utils';
+import { serializeNonPOJOs } from '../lib/utils';
+import { POCKETBASE_URL} from '$env/static/private';
 //your pockethost server
-
 
 
 // This function runs every time the SvelteKit server receives a request!
 export const handle = async ({ event, resolve }) => {
-	event.locals.pb = new PocketBase(PUBLIC_POCKETBASE_URL);
+	// ?? I'm not sure if the secret works.
+	event.locals.pb = new PocketBase(POCKETBASE_URL);
+	
 	//check if a cookie exists
 	event.locals.pb.authStore.loadFromCookie(event.request.headers.get('cookie') || '');
 	if (event.locals.pb.authStore.isValid) {
