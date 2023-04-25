@@ -16,7 +16,7 @@ export const actions = {
             }
         }
         //else throw an error
-        catch (_){
+        catch (err){
             console.log('Error:',err)
             return{
                 error: true,
