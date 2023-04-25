@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <div class="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
 	<div class="overflow-hidden w-2/3 md:-w-full shadow-xl sm:rounded-lg px-2 py-8 ">
 		<div class="w-full md:w-auto space-y-4">
