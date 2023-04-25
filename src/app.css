@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+html,
+body {
+	height: 100%;
+	overflow: hidden;
+}
 /* svelte-kit */
 @layer base {
 	/* Text */

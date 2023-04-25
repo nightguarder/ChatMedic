@@ -3,7 +3,7 @@ import { generateUsername } from '../../../lib/utils.js';
 
 export const actions: Actions = {
     //wait for the form data to be POSTED and convert them to string
-    register: async({locals,request}) =>{
+    register: async ({locals,request}) => {
         const data = Object.fromEntries(await request.formData()) as {
             name: string; //John Doe
             email: string; // john.doe@gmail.com
