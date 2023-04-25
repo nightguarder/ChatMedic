@@ -33,7 +33,7 @@
 						</ul>
 					</li>
 				</ul>
-				{#if !data.user}
+				{#if !data.profile}
 					<a href="./register" class="btn normal-case  bg-grey-400/40">Get Started</a>
 				{:else}
 					<div class="flex-none gap-2">
@@ -61,7 +61,9 @@
 									</a>
 								</li>
 								<li><a>Settings</a></li>
+								<form action= "/logout" method="POST">
 								<li><a href="/logout">Logout</a></li>
+								</form>
 							</ul>
 						</div>
 					</div>
