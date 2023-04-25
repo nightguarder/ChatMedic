@@ -9,9 +9,7 @@
 				/>
 				<h2 class="mt-2 text-center text-3xl font-bold tracking-tight ">Sign in to your account</h2>
 				<p class="mt-1 text-center text-gray-500">
-					No account yet? <a href="./register" class="font-medium text-cyan-600 hover:text-cyan-800"
-						>Register now</a
-					>
+					No account yet? <a href="./register" class="font-medium text-cyan-600 hover:text-cyan-800">Register now</a>
 				</p>
 			</div>
 			<form method="POST" action="?/register" class="flex flex-col items-center space-y-2 w-full">
