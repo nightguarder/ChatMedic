@@ -8,7 +8,7 @@ import { PUBLIC_POCKETBASE_URL } from '$env/static/public';
 export const handle = async ({ event, resolve }) => {
 	// ?? I'm not sure if the secret works.
 	//https://youtu.be/AxPB3e-3yEM
-	event.locals.pb = new PocketBase(process.env.PUBLIC_POCKETBASE_URL);
+	event.locals.pb = new PocketBase(PUBLIC_POCKETBASE_URL);
 
 	//check if a cookie exists
 	event.locals.pb.authStore.loadFromCookie(event.request.headers.get('cookie') || '');
