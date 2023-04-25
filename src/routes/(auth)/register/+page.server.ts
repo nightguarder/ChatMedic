@@ -11,6 +11,7 @@ export const actions: Actions = {
             passwordConfirm: string; //Test 12345
         };
         //create a username
+        console.log(data);
         let username = generateUsername(data.name.split(' ').join(' ')).toLowerCase();
 		try {
             //get data from form and push them to pb

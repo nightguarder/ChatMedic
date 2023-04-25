@@ -1,6 +1,6 @@
 import { Handle, redirect } from "@sveltejs/kit";
 import PocketBase from "pocketbase";
-import { currentUser, pb } from "./lib/pocketbase";
+import { serializeNonPOJOs } from "./lib/utils";
 
 export const handle: Handle = async ({event, resolve}) =>{
 
@@ -9,10 +9,10 @@ export const handle: Handle = async ({event, resolve}) =>{
 	event.locals.pb = new PocketBase(process.env.PUBLIC_POCKETBASE_URL);
 
 	// load the store data from the request cookie string
-	event.locals.pb.authStore.loadFromCookie(cookie || '', process.env.COOKIE_NAME);
+	event.locals.pb.authStore.loadFromCookie(cookie || '');
 
 	if (event.locals.pb.authStore.isValid) {
-		event.locals.user = structuredClone(event.locals.pb.authStore.model) ?? undefined;
+		event.locals.user = serializeNonPOJOs(event.locals.pb.authStore.model) ?? undefined;
 	} else {
 		event.locals.user = undefined;
 	}
@@ -20,13 +20,9 @@ export const handle: Handle = async ({event, resolve}) =>{
     //*SECURED cookie 
     const response = await resolve(event);
 
-    const cookieOpt ={
-        secure: true,
-        sameSite: 'lax',
-        maxAge: 3600, //Expire the cookie in 1 hours
-        expires: new Date(Date.now()+3600 *1000), //Expire the cookie in 1 hour
-    };
-
-    response.headers.append('set-cookie',event.locals.pb.authStore.exportToCookie(cookieOpt, process.env.COOKIE_NAME));
+    response.headers.append(
+		'set-cookie',
+		event.locals.pb.authStore.exportToCookie({ secure: true, httpOnly: false, maxAge: 3600 })
+	);
     return response;
 }
