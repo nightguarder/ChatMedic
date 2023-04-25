@@ -6,14 +6,17 @@
 <div class="md:container">
 	<div class="navbar bg-base-100">
 		<div class="navbar-start">
-			<a href="/" class="btn btn-ghost normal-case text-xl bg-cyan-400/80 hover:bg-cyan-300">ChatMedic</a>
+			<a href="/" class="btn btn-ghost normal-case text-xl bg-cyan-400/80 hover:bg-cyan-300"
+				>ChatMedic</a
+			>
 		</div>
 		<div class="navbar-end">
 			<div class="navbar-center hidden lg:flex">
 				<ul class="menu menu-horizontal dropdown-content  font-medium px-2 bg-base-100">
 					<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 					<li tabindex="0">
-						<a>Menu
+						<a
+							>Menu
 							<svg
 								class="fill-current"
 								xmlns="http://www.w3.org/2000/svg"

@@ -18,9 +18,9 @@
 					>
 				</p>
 			</div>
-			<form method="POST" action="?/register" class="flex flex-col items-center space-y-2 w-full">
-				<div class="form-control w-full max-w-xs">
-					<label class="input-group input-group-vertical pb-1">
+			<form method="POST" action="?/register" class="flex flex-col items-center space-y-3 w-full ">
+				<div class="form-control w-full max-w-xs ">
+					<label class="input-group input-group-vertical ">
 						<span>Full name</span>
 						<input
 							type="text"
@@ -31,7 +31,7 @@
 					</label>
 				</div>
 				<div class="form-control w-full max-w-xs">
-					<label class="input-group input-group-vertical pb-1">
+					<label class="input-group input-group-vertical ">
 						<span>Your Email</span>
 						<input
 							type="email"
@@ -51,7 +51,9 @@
 							type="password"
 							name="password"
 							required
-							class="input input-bordered w-full max-w-xs "
+							class="input input-bordered w-full max-w-xs
+                			invalid:border-pink-rose invalid:text-rose-600
+                			focus:invalid:border-rose-500 focus:invalid:ring-rose-500"
 							placeholder="************"
 						/>
 					</label>
@@ -61,12 +63,15 @@
 						<span>Confirm password</span>
 						<input
 							type="password"
-							required
 							name="passwordConfirm"
-							class="input input-bordered w-full max-w-sm required"
+							required
+							class="input input-bordered w-full max-w-xs
+                			invalid:border-pink-rose invalid:text-rose-600
+                			focus:invalid:border-rose-500 focus:invalid:ring-rose-500"
 							placeholder="************"
 						/>
 					</label>
+					<label for="password" class="text-sm italic">The length must be between 8 and 72.</label>
 				</div>
 				<div class="flex max-w-xs w-full pt-3 py-3">
 					<button class="btn btn-primary btn-md w-full sm:btn-sm md:btn-md">Register</button>
