@@ -4,7 +4,7 @@
 
 <section class="snap-start min-h-screen snap-normal overflox-scroll" id="home">
 	<div
-		class="md:container md:mx-auto max-w-lg px-4 py-32 mx-auto mt-px text-left md:max-w-none md:text-center"
+		class="md:container md:mx-auto max-w-lg px-4 py-44 mx-auto mt-px text-left md:max-w-none md:text-center"
 	>
 		<h1
 			class="text-5xl font-extrabold leading-10 tracking-tight text-left md:text-center sm:leading-none sm:text-4xl md:text-5xl lg:text-6xl"
@@ -16,17 +16,19 @@
 		>
 			Ai Assistant powered by <em>GPT 3.5</em>
 		</h2>
-		<div class="mx-auto mt-5 text-gray-500 md:mt-12 md:max-w-lg md:text-center lg:text-lg">
+		<div class="mx-auto mt-5 text-gray-500 md:mt-12 md:max-w-lg md:text-center lg:text-lg whitespace-pre-line">
 			<p>
-				An easy-to-use AI assistant that can help medical experts make informed decisions and
-				provide the best possible care to their patients.
+				An easy-to-use AI assistant that can help medical experts 
+				make informed decisions and
+				provide the best possible care for their patients.
 			</p>
 		</div>
 		<br />
-		<div class="py-2">
+		<!-- TODO: Responsive design! -->
+		<div class="py-2 w-full lg:text-center">
 			<a
 				href="#one"
-				class="btn btn-primary normal-case text-center w-full px-8 py-4 mt-2 text-white rounded-md md:mb-0 hover:bg-cyan-600 md:w-auto"
+				class="btn btn-primary normal-case text-center px-8 py-4 mt-2 text-white rounded-md md:mb-0 hover:bg-cyan-600 lg:max-w-xl md:w-auto"
 				data-rounded="rounded-md">Start Here</a
 			>
 		</div>
