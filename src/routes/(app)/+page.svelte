@@ -4,7 +4,7 @@
 
 <section class="snap-start min-h-screen snap-normal overflox-scroll" id="home">
 	<div
-		class="md:container md:mx-auto max-w-lg px-4 py-32 mx-auto mt-px text-left md:max-w-none md:text-center"
+		class="md:container md:mx-auto max-w-lg px-4 py-44 mx-auto mt-px text-left md:max-w-none md:text-center"
 	>
 		<h1
 			class="text-5xl font-extrabold leading-10 tracking-tight text-left md:text-center sm:leading-none sm:text-4xl md:text-5xl lg:text-6xl"
