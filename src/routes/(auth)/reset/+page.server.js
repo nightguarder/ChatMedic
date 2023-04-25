@@ -8,7 +8,7 @@ export const actions = {
             return{
                 success: true
             };
-        } catch (error) {
+        } catch (err) {
             console.log('Error: ', err);
 			throw error(500, 'Something went wrong during password reset.');
         }

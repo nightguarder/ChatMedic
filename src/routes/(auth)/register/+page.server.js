@@ -13,7 +13,7 @@ export const actions = {
 			await locals.pb.collection('users').create({ username, ...data });
 			await locals.pb.collection('users').requestVerification(data.email,data.password);
 		} catch (err) {
-			console.log('Error: ', err);
+			console.log('RegisterError: ', err);
 			return{
 				error: true,
 				email: data.email,

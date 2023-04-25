@@ -18,7 +18,8 @@ export const handle = async ({ event, resolve }) => {
 			event.locals.user = serializeNonPOJOs(event.locals.pb.authStore.model);
 		}
 		// "logout" the last authenticated account
-		catch (_){
+		catch (err){
+			console.log('EventError:',err)
 			event.locals.pb.authStore.clear();
 		}
 	} else {

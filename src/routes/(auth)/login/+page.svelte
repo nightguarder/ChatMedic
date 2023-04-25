@@ -60,7 +60,7 @@
 				</div>
 
 				<div class="flex max-w-sm w-full pt-3 py-3">
-					<button class="btn btn-primary btn-md w-full sm:btn-sm md:btn-md">Send now</button>
+					<button class="btn btn-primary btn-md w-full sm:btn-sm md:btn-md">Sign In</button>
 				</div>
 				<p class="mt-1 text-center text-sm text-gray-500">
 					Forgot your password? <a
