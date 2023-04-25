@@ -3,15 +3,14 @@ import { generateUsername } from '../../../lib/utils.js';
 
 export const actions = {
 	register: async ({ locals, request }) => {
-		const body = Object.fromEntries(await request.formData());
-		console.log(body);
-		let username = generateUsername(body.name.split(' ').join(' ')).toLowerCase();
-		//console.log("username=" + username);
+		const data = Object.fromEntries(await request.formData());
+		console.log(data);
+		let username = generateUsername(data.name.split(' ').join(' ')).toLowerCase();
 		//get data from form and push them to pb
-		//email has to be verified before login
 		try {
-			await locals.pb.collection('users').create({ username, ...body });
-			await locals.pb.collection('users').requestVerification(body.email);
+			await locals.pb.collection('users').create({ username, ...data });
+			//email has to be verified before login 
+			await locals.pb.collection('users').requestVerification(data.email);
 		} catch (err) {
 			console.log('Error: ', err);
 			throw error(500, 'Something went wrong during registration.');
