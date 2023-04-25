@@ -18,6 +18,7 @@ export const actions = {
 		}
 		//TODO: Create a popup window to confirm the email.
 		//If succesfull redirect to login page
+		alert("Registration succesfull!\n Please confirm your email before logging in.")
 		throw redirect(303, '/login');
 	}
 };

@@ -13,7 +13,14 @@ export const handle = async ({ event, resolve }) => {
 	//check if a cookie exists
 	event.locals.pb.authStore.loadFromCookie(event.request.headers.get('cookie') || '');
 	if (event.locals.pb.authStore.isValid) {
-		event.locals.user = serializeNonPOJOs(event.locals.pb.authStore.model);
+		try{
+			event.locals.pb.collection('users').authRefresh()
+			event.locals.user = serializeNonPOJOs(event.locals.pb.authStore.model);
+		}
+		// "logout" the last authenticated account
+		catch (_){
+			event.locals.pb.authStore.clear();
+		}
 	} else {
 		event.locals.user = undefined;
 	}
