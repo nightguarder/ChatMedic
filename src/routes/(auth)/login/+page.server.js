@@ -1,21 +1,29 @@
 import { redirect } from '@sveltejs/kit';
 
-// User is not verified!
+// User is not logged
 export const actions = {
     login: async ({request, locals}) =>{
         const formData = await request.formData()
         const data = Object.fromEntries([...formData])
         try {
-            const {token, user} = await locals.pb.users.autViaEmail(data.email,data.password);
+            await locals.pb.collection('users').authWithPassword(data.email,data.password)
+            if(!locals.pb?.authStore?.mode?.verified){
+                locals.pb.authStore.clear()
+                //throw an warning that user is not verified
+                return{
+                    notVerified: true
+                };
+            }
         }
+        //else throw an error
         catch (_){
             console.log('Error:',err)
             return{
                 error: true,
                 email: data.email,
-                throw: error(500, 'Something went wrong during login.')
             }
         }
+        //If success redirect
         throw redirect(303,'/account')
     }
 }

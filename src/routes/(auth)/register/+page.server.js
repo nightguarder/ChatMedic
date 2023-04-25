@@ -3,20 +3,24 @@ import { generateUsername } from '../../../lib/utils.js';
 
 export const actions = {
 	register: async ({ locals, request }) => {
-		const body = Object.fromEntries(await request.formData());
-		console.log(body);
-		let username = generateUsername(body.name.split(' ').join('')).toLowerCase();
+		const data = Object.fromEntries(await request.formData());
+		console.log(data);
+		let username = generateUsername(data.name.split(' ').join('')).toLowerCase();
 		//console.log("username=" + username);
 		//get data from form and push them to pb
 		//email has to be verified before login
 		try {
-			await locals.pb.collection('users').create({ username, ...body });
-			await locals.pb.collection('users').requestVerification(body.email,body.password);
+			await locals.pb.collection('users').create({ username, ...data });
+			await locals.pb.collection('users').requestVerification(data.email,data.password);
 		} catch (err) {
 			console.log('Error: ', err);
-			throw error(500, 'Something went wrong during registration.');
+			return{
+				error: true,
+				email: data.email,
+				password: data.password
+			};
 		}
-		//TODO: Create a popup window to confirm the email.
+		//TODO: Create a formValidation  success(daisyUI) and redirect
 		//If succesfull redirect to login page
 		alert("Registration succesfull!\n Please confirm your email before logging in.")
 		throw redirect(303, '/login');
