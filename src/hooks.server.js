@@ -13,7 +13,7 @@ export const handle = async ({ event, resolve }) => {
 	event.locals.pb.authStore.loadFromCookie(event.request.headers.get('cookie') || '');
 	if (event.locals.pb.authStore.isValid) {
 		try {
-			event.locals.pb.collection('users').authRefresh();
+			//event.locals.pb.collection('users').authRefresh();
 			event.locals.user = serializeNonPOJOs(event.locals.pb.authStore.model);
 		} catch (err) {
 			// "logout" the last authenticated account

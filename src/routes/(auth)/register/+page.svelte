@@ -46,6 +46,7 @@
 					</label>
 				</div>
 				<div class="form-control w-full max-w-sm">
+					<div class="tooltip tooltip-top" data-tip="The length must be between 8 and 72.">
 					<label for="password" class="input-group input-group-vertical">
 						<span>Password</span>
 						<input
@@ -59,20 +60,22 @@
 						/>
 					</label>
 				</div>
+				</div>
 				<div class="form-control w-full max-w-sm">
-					<label for="passwordConfirm" class="input-group input-group-vertical">
-						<span>Confirm password</span>
-						<input
-							type="password"
-							name="passwordConfirm"
-							required
-							class="input input-bordered w-full max-w-sm
-                			invalid:border-pink-rose invalid:text-rose-600
-                			focus:invalid:border-rose-500 focus:invalid:ring-rose-500"
-							placeholder="************"
-						/>
-					</label>
-					<label for="password" class="text-sm italic">The length must be between 8 and 72.</label>
+					<div class="tooltip tooltip-top" data-tip="The length must be between 8 and 72.">
+						<label for="passwordConfirm" class="input-group input-group-vertical">
+							<span>Confirm password</span>
+							<input
+								type="password"
+								name="passwordConfirm"
+								required
+								class="input input-bordered w-full max-w-sm
+								invalid:border-pink-rose invalid:text-rose-600
+								focus:invalid:border-rose-500 focus:invalid:ring-rose-500"
+								placeholder="************"
+							/>
+						</label>
+					</div>
 				</div>
 				<div class="flex max-w-sm w-full pt-3 py-3">
 					<button class="btn btn-primary btn-md w-full sm:btn-sm md:btn-md">Register</button>
