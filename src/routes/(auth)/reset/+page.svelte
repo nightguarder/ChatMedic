@@ -13,10 +13,9 @@
 					alt="Your Company"
 				/>
 				<h2 class="mt-2 text-center text-3xl font-bold tracking-tight ">Reset Password</h2>
-				<p class="mt-1 text-center text-gray-500 whitespace-pre-line">
-					We'll send you an email with a link to reset your password. Make sure the email is from: <em
-						>{emailName}</em
-					>
+				<p class="mt-1 text-center whitespace-pre-line">
+					We'll send you an email with a link to reset your password. 
+					Make sure the email is from: <em>{emailName}</em>
 				</p>
 			</div>
 			<form method="POST" action="?/reset" class="flex flex-col items-center space-y-2 w-full">
