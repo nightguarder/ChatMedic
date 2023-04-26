@@ -61,8 +61,8 @@
 									</a>
 								</li>
 								<li><a>Settings</a></li>
-								<form action= "/logout" method="POST">
-								<li><a href="/logout">Logout</a></li>
+								<form action="/logout" method="POST">
+									<li><a href="/logout">Logout</a></li>
 								</form>
 							</ul>
 						</div>

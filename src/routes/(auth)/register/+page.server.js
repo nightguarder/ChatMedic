@@ -11,10 +11,10 @@ export const actions = {
 		//email has to be verified before login
 		try {
 			await locals.pb.collection('users').create({ username, ...data });
-			await locals.pb.collection('users').requestVerification(data.email,data.password);
+			await locals.pb.collection('users').requestVerification(data.email, data.password);
 		} catch (err) {
 			console.log('RegisterError: ', err);
-			return{
+			return {
 				error: true,
 				email: data.email,
 				password: data.password
@@ -22,7 +22,7 @@ export const actions = {
 		}
 		//TODO: Create a formValidation  success(daisyUI) and redirect
 		//If succesfull redirect to login page
-		alert("Registration succesfull!\n Please confirm your email before logging in.")
+		alert('Registration succesfull!\n Please confirm your email before logging in.');
 		throw redirect(303, '/login');
 	}
 };

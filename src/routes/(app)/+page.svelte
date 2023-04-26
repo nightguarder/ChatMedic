@@ -16,10 +16,11 @@
 		>
 			Ai Assistant powered by <em>GPT 3.5</em>
 		</h2>
-		<div class="mx-auto mt-5 text-gray-500 md:mt-12 md:max-w-lg md:text-center lg:text-lg whitespace-pre-line">
+		<div
+			class="mx-auto mt-5 text-gray-500 md:mt-12 md:max-w-lg md:text-center lg:text-lg whitespace-pre-line"
+		>
 			<p>
-				An easy-to-use AI assistant that can help medical experts 
-				make informed decisions and
+				An easy-to-use AI assistant that can help medical experts make informed decisions and
 				provide the best possible care for their patients.
 			</p>
 		</div>
