@@ -105,7 +105,7 @@
 				data-rounded="rounded-md">Next phase <span aria-hidden="true">↓</span></a
 			>
 		<a
-				href="#phase2"
+				href="#phase1"
 				class="text-center w-full px-4 py-4 mt-2 text-base text-white bg-cyan-500 rounded-md md:mb-0 hover:bg-cyan-600 md:w-auto"
 				data-primary="cyan-500"
 				data-rounded="rounded-md"
