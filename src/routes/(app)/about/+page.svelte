@@ -7,14 +7,14 @@
 		class=" whitespace-pre-line space-y-2 max-w-4xl mx-auto py-16 px-10 sm:py-22 sm:px-6 lg:px-8 sm:text-center w-screen h-screen"
 		contenteditable="false"
 	>
-		<h1 class="font-extrabold  text-6xl sm:text-4xl  lg:text-6xl">{pageTitle}</h1>
+		<h1 class="font-extrabold text-4xl lg:text-6xl">{pageTitle}</h1>
 		<h2
-			class="text-lg sm:text-base text-transparent font-semibold bg-clip-text bg-gradient-to-br from-cyan-600 to-cyan-500 tracking-wide uppercase"
+			class="text-base lg:text-lg text-transparent font-semibold bg-clip-text bg-gradient-to-br from-cyan-600 to-cyan-500 tracking-wide uppercase"
 		>
 			Project “chatmedic"
 		</h2>
 		<p
-			class="lead-relaxed first-letter:text-2xl first-line:text-xl max-w-3xl pb-5 mx-auto text-xl"
+			class="lead-relaxed first-letter:text-2xl max-w-3xl pb-5 mx-auto text-base lg:text-xl"
 		>
 			<b>Until</b> now, experts had to rely on <b>their reasoning</b> to treat their patients.
 			Introducing <b>AI</b> to the medical field <b>enhances</b> the capabilities of their decisions, to ultimately provide <b>better care</b>.
@@ -24,20 +24,11 @@
 			>
 		</p>
 		<br />
-		<div class="p-1">
-			<a
-				href="#phase1"
-				class="text-center w-full px-8 py-4 mt-2 text-base text-white bg-teal-500 rounded-md md:mb-0 hover:bg-teal-600 md:w-auto"
-				data-rounded="rounded-md">View Roadmap</a
-			>
-			<a
-				href="./contact"
-				class="text-center w-full px-8 py-4 mt-2 text-base text-white bg-cyan-500 rounded-md md:mb-0 hover:bg-cyan-600 md:w-auto"
-				data-primary="cyan-500"
-				data-rounded="rounded-md"
-			>
-				Meet the team
-			</a>
+		<div class="flex justify-start sm:justify-center gap-2 sm:gap-4 flex-row ">
+			
+			<button class="btn-primary btn-md sm:btn-xl  text-white bg-teal-500 hover:bg-teal-600"><a class="text-sm sm:text-base" href="#phase1">View Roadmap</a></button>
+			<button class="btn-primary btn-md sm:btn-xl text-white bg-cyan-500 hover:bg-cyan-600 "><a class="text-sm sm:text-base" href="./contact">Meet the team</a></button>
+			
 		</div>
 	</div>
 </section>
@@ -63,19 +54,13 @@
 			and provide <b>accurate</b> and <b>reliable</b> guidance to medical professionals.
 		</p>
 		<br />
-		<a
-				href="#phase2"
-				class="text-center w-full px-8 py-4 mt-2 text-base text-white bg-teal-500 rounded-md md:mb-0 hover:bg-teal-600 md:w-auto"
-				data-rounded="rounded-md">Next phase <span aria-hidden="true">↓</span></a
-			>
-			<a
-				href="#home"
-				class="text-center w-full px-4 py-4 mt-2 text-base text-white bg-cyan-500 rounded-md md:mb-0 hover:bg-cyan-600 md:w-auto"
-				data-primary="cyan-500"
-				data-rounded="rounded-md"
-			>
-			Previous phase <span aria-hidden="true">↑</span>
-			</a>
+		<div class="flex justify-start sm:justify-center gap-2 sm:gap-4 flex-row ">
+			
+			<button class="btn-primary btn-md sm:btn-xl  text-white bg-teal-500 hover:bg-teal-600"><a class="text-sm sm:text-base" href="#phase2">Next phase <span aria-hidden="true">↓</span></a></button>
+			<button class="btn-primary btn-md sm:btn-xl text-white bg-cyan-500 hover:bg-cyan-600 "><a class="text-sm sm:text-base" href="#home">Previous phase <span aria-hidden="true">↑</span></a></button>
+			
+		</div>
+
 	</div>
 </section>
 <section class="snap-start min-h-screen snap-normal" id="phase2">
@@ -99,19 +84,13 @@
 			 and treatment options to <b>ensure</b> that it can provide valuable insights and recommendations in <b>real-world</b> situations.
 		</p>
 		<br />
-		<a
-				href="#phase3"
-				class="text-center w-full px-8 py-4 mt-2 text-base text-white bg-teal-500 rounded-md md:mb-0 hover:bg-teal-600 md:w-auto"
-				data-rounded="rounded-md">Next phase <span aria-hidden="true">↓</span></a
-			>
-		<a
-				href="#phase1"
-				class="text-center w-full px-4 py-4 mt-2 text-base text-white bg-cyan-500 rounded-md md:mb-0 hover:bg-cyan-600 md:w-auto"
-				data-primary="cyan-500"
-				data-rounded="rounded-md"
-			>
-				Previous phase <span aria-hidden="true">↑</span>
-			</a>
+		<div class="flex justify-start sm:justify-center gap-2 sm:gap-4 flex-row ">
+			
+			<button class="btn-primary btn-md sm:btn-xl  text-white bg-teal-500 hover:bg-teal-600"><a class="text-sm sm:text-base" href="#phase3">Next phase <span aria-hidden="true">↓</span></a></button>
+			<button class="btn-primary btn-md sm:btn-xl text-white bg-cyan-500 hover:bg-cyan-600 "><a class="text-sm sm:text-base" href="#phase1">Previous phase <span aria-hidden="true">↑</span></a></button>
+			
+		</div>
+
 	</div>
 </section>
 <section class="snap-start min-h-screen snap-normal" id="phase3">
@@ -136,13 +115,8 @@
 			and work to continuously improve its performance and capabilities in order to fulfill our <b>mission</b>.
 		</p>
 		<br />
-		<a
-				href="#home"
-				class="text-center w-full px-4 py-4 mt-2 text-base text-white bg-cyan-500 rounded-md md:mb-0 hover:bg-cyan-600 md:w-auto"
-				data-primary="cyan-500"
-				data-rounded="rounded-md"
-			>
-				Back to Home <span aria-hidden="true">↑</span>
-			</a>
+		<div class="flex justify-start sm:justify-center">
+		<button class=" btn-primary btn-md md:btn-xl text-white bg-cyan-500 hover:bg-cyan-600"><a href="#home">Back to start <span aria-hidden="true">↑</span></a></button>
+		</div>
 	</div>
 </section>
