@@ -7,17 +7,17 @@
 		class="md:container md:mx-auto max-w-lg px-4 py-44 mx-auto mt-px text-left md:max-w-none md:text-center"
 	>
 		<h1
-			class="text-5xl font-extrabold leading-10 tracking-tight text-left md:text-center sm:leading-none sm:text-4xl md:text-5xl lg:text-6xl"
+			class="text-5xl font-extrabold leading-10 tracking-tight text-left md:text-center md:text-5xl lg:text-6xl"
 		>
 			<span class="inline md:block">Welcome to {pageTitle}!</span>
 		</h1>
 		<h2
-			class="mt-2 text-lg sm:text-base text-transparent font-semibold bg-clip-text bg-gradient-to-br from-cyan-600 to-cyan-500 tracking-wide uppercase"
+			class="mt-2 text-lg text-transparent font-semibold bg-clip-text bg-gradient-to-br from-cyan-600 to-cyan-500 tracking-wide uppercase"
 		>
 			Ai Assistant powered by <em>GPT 3.5</em>
 		</h2>
 		<div
-			class="mx-auto mt-5 text-gray-500 md:mt-12 md:max-w-lg md:text-center lg:text-lg whitespace-pre-line"
+			class="mx-auto  lg:max-w-xl mt-5 text-gray-500 md:mt-12 md:text-center lg:text-lg whitespace-pre-line"
 		>
 			<p>
 				An easy-to-use AI assistant that can help medical experts make informed decisions and
@@ -26,7 +26,7 @@
 		</div>
 		<br />
 		<!-- TODO: Responsive design! -->
-		<div class="py-2 w-full lg:text-center">
+		<div class="py-2 w-full sm:text-left md:text-center lg:text-center">
 			<a
 				href="#one"
 				class="btn btn-primary normal-case text-center px-8 py-4 mt-2 text-white rounded-md md:mb-0 hover:bg-cyan-600 lg:max-w-xl md:w-auto"

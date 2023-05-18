@@ -1,9 +1,9 @@
-<script>
+<script lang="ts">
 	export let form;
 </script>
 
-<div class="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-	<div class="overflow-hidden w-3/4 md:-w-full shadow-xl sm:rounded-lg px-2 py-8">
+<div class="flex min-h-full min-w-full items-center justify-center py-12 px-4 sm:px-8 lg:px-8">
+	<div class="overflow-hidden sm:w-screen sm:-w-full sm:shadow-xl sm:rounded-lg px-2 py-8">
 		<div class="w-full md:w-auto space-y-4">
 			<div class="space-y-3">
 				<img
@@ -20,23 +20,26 @@
 				</p>
 			</div>
 			<form method="POST" action="?/register" class="flex flex-col items-center space-y-3 w-full ">
-				<div class="form-control w-full max-w-sm ">
-					<label class="input-group input-group-vertical ">
+				<div class="form-control w-full max-w-sm">
+					<label for="name" class="input-group input-group-vertical ">
 						<span>Full name</span>
 						<input
 							type="text"
 							name="name"
+							id="name"
+							required
 							placeholder="John Doe"
-							class="input input-bordered input-md sm:input-sm xl:input-md w-full max-w-sm"
+							class="input input-bordered input-md xl:input-md w-full max-w-sm"
 						/>
 					</label>
 				</div>
 				<div class="form-control w-full max-w-sm">
-					<label class="input-group input-group-vertical ">
+					<label for="email" class="input-group input-group-vertical ">
 						<span>Your Email</span>
 						<input
 							type="email"
 							name="email"
+							id="email"
 							required
 							class="input input-bordered w-full max-w-sm
                 invalid:border-pink-rose invalid:text-rose-600
@@ -52,6 +55,7 @@
 						<input
 							type="password"
 							name="password"
+							id="password"
 							required
 							class="input input-bordered w-full max-w-sm
                 			invalid:border-pink-rose invalid:text-rose-600
