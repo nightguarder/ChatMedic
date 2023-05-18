@@ -1,14 +1,17 @@
 import { redirect } from '@sveltejs/kit';
 
+
 // User is not logged
 export const actions = {
 	login: async ({ request, locals }) => {
-		const formData = await request.formData();
-		console.log(formData);
+		const formData = await Object.fromEntries(await request.formData());
 		//If email is a string or a non-iterable object, you can't use the Object.fromEntries() method on it.
-		const data = Object.fromEntries(formData);
 		try {
-			await locals.pb.collection('users').authWithPassword(data.email, data.password);
+			await locals.pb.collection('users').authWithPassword(formData.email, formData.password);
+			//Verify if user is verified
+			console.log(locals.pb.authStore.isValid);
+			console.log(locals.pb.authStore.token);
+			console.log(locals.pb?.authStore?.model?.verified);
 			if (!locals.pb?.authStore?.model?.verified) {
 				locals.pb.authStore.clear();
 				return {
@@ -20,10 +23,10 @@ export const actions = {
 			console.log('LoginError:', err);
 			return {
 				error: true,
-				email: data.email
+				email: formData.email
 			};
 		}
-		//If success redirect
+		//If success formData redirect
 		throw redirect(303, '/account');
 	}
 };

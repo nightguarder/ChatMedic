@@ -29,45 +29,11 @@
 						<ul class="p-2">
 							<li><a href="./about">About</a></li>
 							<li><a href="./contact">Contact</a></li>
-							<li><a href="./login">My Account</a></li>
+							<li><a href="./account">My Account</a></li>
 						</ul>
 					</li>
 				</ul>
-				{#if !data.profile}
-					<a href="./register" class="btn normal-case  bg-grey-400/40">Get Started</a>
-				{:else}
-					<div class="flex-none gap-2">
-						<div class="form-control">
-							<input type="text" placeholder="Search" class="input input-bordered" />
-						</div>
-						<div class="dropdown dropdown-end">
-							<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-							<label tabindex="0" for="dropdown" class="btn btn-ghost btn-circle avatar">
-								<div class="avatar placeholder">
-									<div class="bg-neutral-focus text-neutral-content rounded-full w-12">
-										<span>PC</span>
-									</div>
-								</div>
-							</label>
-							<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-							<ul
-								tabindex="0"
-								class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
-							>
-								<li>
-									<a class="justify-between">
-										Profile
-										<span class="badge">New</span>
-									</a>
-								</li>
-								<li><a>Settings</a></li>
-								<form action="/logout" method="POST">
-									<li><a href="/logout">Logout</a></li>
-								</form>
-							</ul>
-						</div>
-					</div>
-				{/if}
+				
 				<Dark /><!-- Dark Mode -->
 			</div>
 			<!-- navbar normal -->
@@ -94,14 +60,16 @@
 				class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
 			>
 				<li>
-					<a href="./register" class="justify-between ">
-						Get Started
-						<span class="badge">Free</span>
+					<a href="./profile" class="justify-between ">
+						My Account
+						<span class="badge">New</span>
 					</a>
 				</li>
-				<li><a href="./about">About</a></li>
 				<li><a href="./contact">Contact</a></li>
-				<li><a href="./login">My Account</a></li>
+				<li><a href="./settings">Settings</a></li>
+				<li><form action="/logout" method="POST">
+					<button type="submit" class="w-full text-start">Logout</button>
+				</form></li>
 			</ul>
 		</div>
 		<!-- dropdown menu -->
