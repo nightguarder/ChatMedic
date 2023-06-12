@@ -25,13 +25,9 @@
 			</p>
 		</div>
 		<br />
-		<div class="py-2">
-			<a
-				href="#team"
-				class="btn btn-primary normal-case text-center w-full px-8 py-4 mt-2 text-white rounded-md md:mb-0 hover:bg-cyan-600 md:w-auto"
-				data-rounded="rounded-md">Team Members</a
-			>
-		</div>
+		<div class="flex justify-start sm:justify-center">
+			<button class=" btn-primary btn-md md:btn-xl text-white bg-cyan-500 hover:bg-cyan-600"><a href="#team">Team members</a></button>
+			</div>
 	</div>
 	<!-- Text -->
 </section>
@@ -44,7 +40,7 @@
 			<span class="inline md:block">Our Team</span>
 		</h1>
 		<div
-			class="mx-auto mt-10 grid max-w-4xl grid-cols-1 gap-y-16 gap-x-8 border-t border-white-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+			class="mx-auto mt-10 grid max-w-4xl grid-cols-1 sm:grid-cols-3 gap-y-16 gap-x-8 border-t border-white-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3"
 		>
 			<article class="flex max-w-xl flex-col items-start justify-between">
 				<div class="flex items-center gap-x-4 text-xs">

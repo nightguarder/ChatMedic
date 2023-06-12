@@ -3,7 +3,7 @@
 </script>
 
 <div class="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-	<div class="overflow-hidden w-3/4 md:-w-full shadow-xl sm:rounded-lg px-2 py-8 ">
+	<div class="overflow-hidden sm:w-screen sm:-w-full sm:shadow-xl sm:rounded-lg px-2 py-8 ">
 		<div class="w-full md:w-auto space-y-4">
 			<div class="space-y-3 py-2">
 				<img
@@ -63,7 +63,7 @@
 				</div>
 
 				<div class="flex max-w-sm w-full pt-3 py-3">
-					<button class="btn btn-primary btn-md w-full sm:btn-sm md:btn-md">Sign In</button>
+					<button class="btn btn-primary w-full btn-sm sm:btn-md">Sign In</button>
 				</div>
 				<p class="mt-1 text-center text-sm text-gray-500">
 					Forgot your password? <a
