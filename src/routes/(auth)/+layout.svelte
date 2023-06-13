@@ -39,20 +39,20 @@
 						<span class="badge">Start</span>
 					</a>
 				</li>
-				<li><a href="./my/settings">Settings</a></li>
-				<li><a href="./contact">Contact</a></li>
+				<li><a href="/my">Dashboard</a></li>
+				<li><a href="/my/settings/account">My Account</a></li>
 				<li><form action="/logout" method="POST">
 					<button type="submit" class="w-full text-start">Logout</button>
 				</form></li>
 				{:else}
 					<li>
-						<a href="./register" class="justify-between ">
+						<a href="/register" class="justify-between ">
 							Register
 							<span class="badge">Register</span>
 						</a>
 					</li>
-					<li><a href="./my/settings">Settings</a></li>
-					<li><a href="./contact">Contact</a></li>
+					<li><a href="/my/settings">Settings</a></li>
+					<li><a href="/contact">Contact</a></li>
 					{/if}
 				</ul>
 			</div>
@@ -73,8 +73,8 @@
 						</div>
 					  </div> 
 					<ul class="p-2">
-						<li><a href="./my/settings">Settings</a></li>
-						<li><a href="./my/account">My Account</a></li>
+						<li><a href="/my">Dashboard</a></li>
+						<li><a href="/my/settings/account">My Account</a></li>
 						<li><form action="/logout" method="POST">
 							<button type="submit" class="w-full text-start">Logout</button>
 						</form></li>
