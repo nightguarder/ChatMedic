@@ -33,7 +33,7 @@
 					class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
 				>
 					<li>
-						<a href="./register" class="justify-between ">
+						<a href="./aichat" class="justify-between ">
 							ChatAI
 							<span class="badge">Start</span>
 						</a>
@@ -48,8 +48,18 @@
 			<!-- Desktop -->
 			<div class="navbar-center hidden lg:flex">
 				<ul class="menu menu-horizontal dropdown-content  font-medium px-2 bg-base-100">
+					{#if !data.user}
 					<li>
-						<a href="./chat" class="justify-between ">
+						<a href="./register" class="justify-between ">
+							Get Started
+							<span class="badge">Free</span>
+						</a>
+					</li>
+					<li><a href="./login">Login</a></li>
+					<li><a href="/">Home</a></li>
+					{:else}
+					<li>
+						<a href="./aichat" class="justify-between ">
 							ChatAI
 							<span class="badge">Start</span>
 						</a>
@@ -57,17 +67,18 @@
 					<li tabindex="-1">
 						<div class="avatar placeholder">
 							<div class="bg-neutral-focus text-neutral-content rounded-full w-12">
-							  <span>MX</span>
+							  <span>{data?.firstLetter + data?.secondLetter.toUpperCase()}</span>
 							</div>
 						  </div> 
 						<ul class="p-2">
-							<li><a href="./account">Settings</a></li>
-							<li><a href="./contact">Contact</a></li>
+							<li><a href="./my/settings">Settings</a></li>
+							<li><a href="./my/account">My Account</a></li>
 							<li><form action="/logout" method="POST">
 								<button type="submit" class="w-full text-start">Logout</button>
 							</form></li>
 						</ul>
 					</li>
+					{/if}
 				</ul>
 			</div>
 		</div>

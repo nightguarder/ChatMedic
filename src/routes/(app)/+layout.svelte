@@ -29,7 +29,7 @@
 						<ul class="p-2">
 							<li><a href="./about">About</a></li>
 							<li><a href="./contact">Contact</a></li>
-							<li><a href="./login">My Account</a></li>
+							<li><a href="./my">My Account</a></li>
 						</ul>
 					</li>
 				</ul>
@@ -39,6 +39,7 @@
 			<!-- navbar normal -->
 		</div>
 		<!-- navbar end -->
+		<!-- Mobile first -->
 		<div class="dropdown dropdown-end">
 			<label tabindex="-1" for="dropdown" class="btn btn-ghost lg:hidden">
 				<svg
@@ -67,7 +68,7 @@
 				</li>
 				<li><a href="./about">About</a></li>
 				<li><a href="./contact">Contact</a></li>
-				<li><a href="./login">My Account</a></li>
+				<li><a href="./my">My Account</a></li>
 			</ul>
 		</div>
 		<!-- dropdown menu -->

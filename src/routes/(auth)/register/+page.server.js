@@ -22,7 +22,7 @@ export const actions = {
 		}
 		//TODO: Create a formValidation  success(daisyUI) and redirect
 		//If succesfull redirect to login page
-		alert('Registration succesfull!\n Please confirm your email before logging in.');
+		//alert('Registration succesfull!\n Please confirm your email before logging in.');
 		throw redirect(303, '/login');
 	}
 };
