@@ -34,7 +34,7 @@
             <div class="avatar online">
               <div class="w-16 rounded-full">
                 <div class="bg-neutral-focus text-neutral-content rounded-full w-12">
-                                  <span>{data?.firstLetter + data?.secondLetter.toUpperCase()}</span>
+                                  <span><!-- {data?.firstLetter + data?.secondLetter.toUpperCase()} --></span>
                                 </div>
               </div>
             </div>

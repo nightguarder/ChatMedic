@@ -26,7 +26,7 @@
         <label for="avatar" class="avatar w-32 rounded-full hover:cursor-pointer">
             <div class="avatar placeholder">
                 <div class="bg-neutral-focus text-neutral-content rounded-full w-24">
-                  <span id="avatar" class="text-3xl">{data?.firstLetter + data?.secondLetter.toUpperCase()}</span>
+                  <span id="avatar" class="text-3xl"><!-- {data?.firstLetter + data?.secondLetter.toUpperCase()} --></span>
                 </div>
             </label>
 	</form>

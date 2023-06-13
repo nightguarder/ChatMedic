@@ -1,16 +1,11 @@
 import { redirect } from '@sveltejs/kit';
 
-//protection Auth Routes
-
-export const load = ({locals}) =>{
-    let LoggedIn = false;
-	
-    if (!locals.pb.authStore.isValid) {
+export const load = ({ locals }) => {
+	let firstName = locals.user.name[0];
+	let lastName = locals.user.name[1];
+	if (!locals.pb.authStore.isValid) {
 		throw redirect(303, '/login');
 	} else {
-		LoggedIn = true;
-		console.log(LoggedIn);
-		return {LoggedIn:true}
+		return {firstName,lastName}
 	}
-	
-}
+};
