@@ -32,20 +32,55 @@
 					tabindex="-1"
 					class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
 				>
+				{#if data.user}
+				<li>
+					<a href="./my/aichat" class="justify-between ">
+						ChatAI
+						<span class="badge">Start</span>
+					</a>
+				</li>
+				<li><a href="./my/settings">Settings</a></li>
+				<li><a href="./contact">Contact</a></li>
+				<li><form action="/logout" method="POST">
+					<button type="submit" class="w-full text-start">Logout</button>
+				</form></li>
+				{:else}
 					<li>
 						<a href="./register" class="justify-between ">
 							Register
 							<span class="badge">Register</span>
 						</a>
 					</li>
-					<li><a href="./account">Settings</a></li>
+					<li><a href="./my/settings">Settings</a></li>
 					<li><a href="./contact">Contact</a></li>
+					{/if}
 				</ul>
 			</div>
 			<!-- Desktop -->
 			<div class="navbar-center hidden lg:flex">
 				<ul class="menu menu-horizontal dropdown-content  font-medium px-2 bg-base-100">
-					
+				{#if data.user}
+				<li>
+					<a href="./my/aichat" class="justify-between ">
+						ChatAI
+						<span class="badge">Start</span>
+					</a>
+				</li>
+				<li tabindex="-1">
+					<div class="avatar placeholder">
+						<div class="bg-neutral-focus text-neutral-content rounded-full w-12">
+						  <span>{data?.firstName + data?.lastName}</span>
+						</div>
+					  </div> 
+					<ul class="p-2">
+						<li><a href="./my/settings">Settings</a></li>
+						<li><a href="./my/account">My Account</a></li>
+						<li><form action="/logout" method="POST">
+							<button type="submit" class="w-full text-start">Logout</button>
+						</form></li>
+					</ul>
+				</li>
+				{:else}
 					<li>
 						<a href="./register" class="justify-between ">
 							Get Started
@@ -54,7 +89,7 @@
 					</li>
 					<li><a href="./login">Login</a></li>
 					<li><a href="/">Home</a></li>
-					
+				{/if}
 				</ul>
 			</div>
 		</div>
