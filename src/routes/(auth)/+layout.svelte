@@ -61,7 +61,7 @@
 				<ul class="menu menu-horizontal dropdown-content  font-medium px-2 bg-base-100">
 				{#if data.user}
 				<li>
-					<a href="./my/aichat" class="justify-between ">
+					<a href="/my/aichat" class="justify-between ">
 						ChatAI
 						<span class="badge">Start</span>
 					</a>
