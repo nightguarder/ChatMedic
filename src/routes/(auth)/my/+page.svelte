@@ -17,11 +17,13 @@
 	<span>Your purchase has been confirmed!</span>
   </div> -->
 
-<section class="min-h-screen snap-start snap-normal" id="one">
-	<div class="max-w-7xl px-10 mx-auto sm:text-center">
-		<p class="text-teal-600 font-medium uppercase">Welcome back  {data.user.name}!</p>
-		<h2 class="font-bold text-2xl sm:text-2xl lg:text-4xl mt-3">
-			You can now access the features and functionalities of the app.
+<section class="min-h-screen   overflox-scroll snap-start snap-normal" id="one">
+	<div class="md:container md:mx-auto max-w-lg px-4 py-44 mx-auto mt-px text-left md:max-w-none md:text-center">
+		<p class="text-teal-600 font-medium uppercase">Welcome back  <span class="text-cyan-400">{data.user.name}</span>!</p>
+		<h2 class="font-bold text-2xl sm:text-2xl lg:text-4xl mt-3 whitespace-pre-line">
+			You can now access the features 
+			and 
+			functionalities of the app.
 		</h2>
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 my-12 sm:my-16">
 			<!-- AI Chat -->
@@ -190,4 +192,6 @@
 		<!-- Grid -->
 	</div>
 	<!-- Container -->
+</section>
+<section class="min-h-screen   overflox-scroll snap-start snap-normal" id="two">
 </section>

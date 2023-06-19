@@ -69,7 +69,7 @@
 				<li tabindex="-1">
 					<div class="avatar placeholder">
 						<div class="bg-neutral-focus text-neutral-content rounded-full w-12">
-						  <span>{data?.firstName + data?.lastName}</span>
+						  <span>{data.firstChar + data.secondChar}</span>
 						</div>
 					  </div> 
 					<ul class="p-2">
