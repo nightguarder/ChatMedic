@@ -26,7 +26,7 @@ export const actions = {
 				email: formData.email
 			};
 		}
-		//If success formData redirect
-		throw redirect(303, '/account');
+		//If success formData redirect to Account
+		throw redirect(303, '/my');
 	}
 };
