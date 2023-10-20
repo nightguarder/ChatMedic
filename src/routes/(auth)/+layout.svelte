@@ -1,5 +1,4 @@
 <script>
-	import Dark from '../../lib/theme/dark.svelte';
 	export let data;
 </script>
 

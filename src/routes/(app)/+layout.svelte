@@ -1,5 +1,5 @@
 <script>
-	import Dark from '../../lib/theme/dark.svelte';
+	
 </script>
 
 <div class="md:container">
@@ -34,7 +34,6 @@
 					</li>
 				</ul>
 				<a href="./register" class="btn normal-case  bg-grey-400/40">Get Started</a>
-				<Dark /><!-- Dark Mode -->
 			</div>
 			<!-- navbar normal -->
 		</div>
