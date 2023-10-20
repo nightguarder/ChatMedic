@@ -3,7 +3,6 @@
 	// Get the value of the message from the URL query parameters
 </script>
 
-
 <!-- {#if data?.Loggedin}
 <div id="message" class="alert alert-error">
 	<svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
@@ -17,13 +16,15 @@
 	<span>Your purchase has been confirmed!</span>
   </div> -->
 
-<section class="min-h-screen   overflox-scroll snap-start snap-normal" id="one">
-	<div class="md:container md:mx-auto max-w-lg px-4 py-44 mx-auto mt-px text-left md:max-w-none md:text-center">
-		<p class="text-teal-600 font-medium uppercase">Welcome back  <span class="text-cyan-400">{data.user.name}</span>!</p>
+<section class="min-h-screen overflox-scroll snap-start snap-normal" id="one">
+	<div
+		class="md:container md:mx-auto max-w-lg px-4 py-44 mx-auto mt-px text-left md:max-w-none md:text-center"
+	>
+		<p class="text-teal-600 font-medium uppercase">
+			Welcome back <span class="text-cyan-400">{data.user.name}</span>!
+		</p>
 		<h2 class="font-bold text-2xl sm:text-2xl lg:text-4xl mt-3 whitespace-pre-line">
-			You can now access the features 
-			and 
-			functionalities of the app.
+			You can now access the features and functionalities of the app.
 		</h2>
 		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 my-12 sm:my-16">
 			<!-- AI Chat -->
@@ -193,5 +194,4 @@
 	</div>
 	<!-- Container -->
 </section>
-<section class="min-h-screen   overflox-scroll snap-start snap-normal" id="two">
-</section>
+<section class="min-h-screen overflox-scroll snap-start snap-normal" id="two" />

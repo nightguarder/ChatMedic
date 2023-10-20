@@ -1,5 +1,5 @@
 <script>
-	
+	export let pageTitle = 'ChatMedic';
 </script>
 
 <div class="md:container">
@@ -8,12 +8,12 @@
 			<a
 				href="/"
 				class="btn btn-ghost text-white normal-case text-xl bg-cyan-400/80 hover:bg-cyan-300"
-				>ChatMedic</a
+				>{pageTitle}</a
 			>
 		</div>
 		<div class="navbar-end">
 			<div class="navbar-center hidden lg:flex">
-				<ul class="menu menu-horizontal dropdown-content  font-medium px-2 bg-base-100">
+				<ul class="menu menu-horizontal dropdown-content font-medium px-2 bg-base-100">
 					<li tabindex="-1">
 						<a
 							>Menu
@@ -33,7 +33,7 @@
 						</ul>
 					</li>
 				</ul>
-				<a href="./register" class="btn normal-case  bg-grey-400/40">Get Started</a>
+				<a href="./register" class="btn normal-case bg-grey-400/40">Get Started</a>
 			</div>
 			<!-- navbar normal -->
 		</div>
@@ -60,7 +60,7 @@
 				class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
 			>
 				<li>
-					<a href="./register" class="justify-between ">
+					<a href="./register" class="justify-between">
 						Get Started
 						<span class="badge">Free</span>
 					</a>

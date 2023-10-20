@@ -26,8 +26,10 @@
 		</div>
 		<br />
 		<div class="flex justify-start sm:justify-center">
-			<button class=" btn-primary btn-md md:btn-xl text-white bg-cyan-500 hover:bg-cyan-600"><a href="#team">Team members</a></button>
-			</div>
+			<button class=" btn-primary btn-md md:btn-xl text-white bg-cyan-500 hover:bg-cyan-600"
+				><a href="#team">Team members</a></button
+			>
+		</div>
 	</div>
 	<!-- Text -->
 </section>
@@ -69,7 +71,7 @@
 						class="h-10 w-10 rounded-full bg-gray-50"
 					/>
 					<div class="text-sm leading-6">
-						<p class="font-semibold ">
+						<p class="font-semibold">
 							<a
 								target="_blank"
 								rel="noreferrer"
@@ -113,7 +115,7 @@
 						class="h-10 w-10 rounded-full bg-gray-50"
 					/>
 					<div class="text-sm leading-6">
-						<p class="font-semibold ">
+						<p class="font-semibold">
 							<a target="_blank" rel="noreferrer" href="https://www.stegerova.cz">
 								<span class="absolute inset-0" />
 								MUDr. Martina Stegerová

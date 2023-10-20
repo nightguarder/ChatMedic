@@ -6,13 +6,12 @@
 		<meta name="viewport" content="width=device-width" />
 		<script>
 			const THEME_ATTRIBUTE = 'data-theme';
-			const currentTheme =
-				document.cookie
-					.split('; ')
-					.find((row) => row.startsWith('theme='))
-					?.split('=')?.[1] || 'light';
+			const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches
+				? 'dark'
+				: 'light';
+			document.documentElement.classList.remove('light', 'dark');
 
-			document.querySelector('html')?.setAttribute(THEME_ATTRIBUTE, currentTheme);
+			document.querySelector('html')?.setAttribute(THEME_ATTRIBUTE, systemTheme);
 		</script>
 		%sveltekit.head%
 	</head>

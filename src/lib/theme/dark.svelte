@@ -1,4 +1,5 @@
-<script>
+<!-- Dark mode is now deprecated. Using shadcn Dark mode -->
+<!-- <script>
 	import { browser, dev, version } from '$app/environment';
 	//global variable
 	let boolTheme = true;
@@ -33,4 +34,4 @@
 		@apply bg-transparent;
 		box-shadow: inset -18px -16px 1px 1px #ffffff;
 	}
-</style>
+</style> -->

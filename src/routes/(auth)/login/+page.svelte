@@ -3,7 +3,7 @@
 </script>
 
 <div class="flex min-h-full items-center justify-center py-2 px-4 sm:px-6 lg:px-8">
-	<div class="overflow-hidden sm:w-screen sm:-w-full sm:shadow-xl sm:rounded-lg px-2 py-8 ">
+	<div class="overflow-hidden sm:w-screen sm:-w-full sm:shadow-xl sm:rounded-lg px-2 py-8">
 		<div class="w-full md:w-auto space-y-4">
 			<div class="space-y-3 py-2">
 				<img
@@ -11,7 +11,7 @@
 					src="https://tailwindui.com/img/logos/mark.svg?color=cyan&shade=600"
 					alt="logo"
 				/>
-				<h2 class="mt-2 text-center text-3xl font-bold tracking-tight ">Sign in to your account</h2>
+				<h2 class="mt-2 text-center text-3xl font-bold tracking-tight">Sign in to your account</h2>
 				<p class="mt-1 text-center text-gray-500">
 					No account yet? <a href="./register" class="font-medium text-cyan-600 hover:text-cyan-800"
 						>Register now</a
@@ -41,14 +41,14 @@
 							type="password"
 							name="password"
 							required
-							class="input input-bordered w-full max-w-sm "
+							class="input input-bordered w-full max-w-sm"
 							placeholder="************"
 						/>
 					</label>
 				</div>
 
 				<div class="form-control w-full max-w-sm">
-					<div class="flex items-center justify between ">
+					<div class="flex items-center justify between">
 						<label class="cursor-pointer label">
 							<input
 								id="remember-me"
@@ -91,7 +91,7 @@
 					</div>
 				{/if}
 				{#if form?.error}
-					<div class="alert alert-error shadow-lg  max-w-xs w-full">
+					<div class="alert alert-error shadow-lg max-w-xs w-full">
 						<div>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"

@@ -17,7 +17,7 @@
 			Ai Assistant powered by <em>GPT 3.5</em>
 		</h2>
 		<div
-			class="mx-auto  lg:max-w-xl mt-5 text-gray-500 md:mt-12 md:text-center lg:text-lg whitespace-pre-line"
+			class="mx-auto lg:max-w-xl mt-5 text-gray-500 md:mt-12 md:text-center lg:text-lg whitespace-pre-line"
 		>
 			<p>
 				An easy-to-use AI assistant that can help medical experts make informed decisions and

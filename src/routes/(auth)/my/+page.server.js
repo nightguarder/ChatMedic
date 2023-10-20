@@ -7,6 +7,6 @@ export const load = ({ locals }) => {
 		throw redirect(303, '/login');
 	} else {
 		//console.log(firstName + lastName)
-		return {firstName,lastName}
+		return { firstName, lastName };
 	}
 };

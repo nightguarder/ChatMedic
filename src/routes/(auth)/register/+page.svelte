@@ -11,7 +11,7 @@
 					src="https://tailwindui.com/img/logos/mark.svg?color=cyan&shade=600"
 					alt="Company logo"
 				/>
-				<h2 class="mt-2 text-center text-3xl font-bold tracking-tight ">Register for an account</h2>
+				<h2 class="mt-2 text-center text-3xl font-bold tracking-tight">Register for an account</h2>
 				<p class="mt-1 text-center text-gray-500">
 					Already have an account? <a
 						href="./login"
@@ -19,9 +19,9 @@
 					>
 				</p>
 			</div>
-			<form method="POST" action="?/register" class="flex flex-col items-center space-y-3 w-full ">
+			<form method="POST" action="?/register" class="flex flex-col items-center space-y-3 w-full">
 				<div class="form-control w-full max-w-sm">
-					<label for="name" class="input-group input-group-vertical ">
+					<label for="name" class="input-group input-group-vertical">
 						<span>Full name</span>
 						<input
 							type="text"
@@ -34,7 +34,7 @@
 					</label>
 				</div>
 				<div class="form-control w-full max-w-sm">
-					<label for="email" class="input-group input-group-vertical ">
+					<label for="email" class="input-group input-group-vertical">
 						<span>Your Email</span>
 						<input
 							type="email"
@@ -50,20 +50,20 @@
 				</div>
 				<div class="form-control w-full max-w-sm">
 					<div class="tooltip tooltip-top" data-tip="The length must be between 8 and 72.">
-					<label for="password" class="input-group input-group-vertical">
-						<span>Password</span>
-						<input
-							type="password"
-							name="password"
-							id="password"
-							required
-							class="input input-bordered w-full max-w-sm
+						<label for="password" class="input-group input-group-vertical">
+							<span>Password</span>
+							<input
+								type="password"
+								name="password"
+								id="password"
+								required
+								class="input input-bordered w-full max-w-sm
                 			invalid:border-pink-rose invalid:text-rose-600
                 			focus:invalid:border-rose-500 focus:invalid:ring-rose-500"
-							placeholder="************"
-						/>
-					</label>
-				</div>
+								placeholder="************"
+							/>
+						</label>
+					</div>
 				</div>
 				<div class="form-control w-full max-w-sm">
 					<div class="tooltip tooltip-top" data-tip="The length must be between 8 and 72.">
@@ -85,7 +85,7 @@
 					<button class="btn btn-primary btn-md w-full sm:btn-sm md:btn-md">Register</button>
 				</div>
 				{#if form?.error}
-					<div class="alert alert-error shadow-lg  max-w-xs w-full">
+					<div class="alert alert-error shadow-lg max-w-xs w-full">
 						<div>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
