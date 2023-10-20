@@ -1,6 +1,5 @@
 import { redirect } from '@sveltejs/kit';
 
-
 // User is not logged
 export const actions = {
 	login: async ({ request, locals }) => {

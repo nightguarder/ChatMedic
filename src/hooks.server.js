@@ -2,7 +2,7 @@ import PocketBase from 'pocketbase';
 import { serializeNonPOJOs } from './lib/utils';
 import { PUBLIC_POCKETBASE_URL } from '$env/static/public';
 import { redirect } from '@sveltejs/kit';
-const POCKETBASE_URL="https://chat-medic.pockethost.io";
+const POCKETBASE_URL = 'https://chat-medic.pockethost.io';
 //your pockethost server
 
 // This function runs every time the SvelteKit server receives a request!
@@ -29,9 +29,9 @@ export const handle = async ({ event, resolve }) => {
 		event.locals.user = undefined;
 	}
 	//Everytime user tries to visit protected route
-	if(event.url.pathname.startsWith("/my")){
-		if(!event.locals.user){
-			throw redirect(303,"/login");
+	if (event.url.pathname.startsWith('/my')) {
+		if (!event.locals.user) {
+			throw redirect(303, '/login');
 		}
 	}
 	//Render route and generate response

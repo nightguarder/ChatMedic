@@ -1,6 +1,6 @@
 import adapter from '@sveltejs/adapter-auto';
 import { vitePreprocess } from '@sveltejs/kit/vite';
-import tailwindConfig from './tailwind.config.cjs';
+
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {

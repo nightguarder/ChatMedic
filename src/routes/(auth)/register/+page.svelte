@@ -50,20 +50,20 @@
 				</div>
 				<div class="form-control w-full max-w-sm">
 					<div class="tooltip tooltip-top" data-tip="The length must be between 8 and 72.">
-					<label for="password" class="input-group input-group-vertical">
-						<span>Password</span>
-						<input
-							type="password"
-							name="password"
-							id="password"
-							required
-							class="input input-bordered w-full max-w-sm
+						<label for="password" class="input-group input-group-vertical">
+							<span>Password</span>
+							<input
+								type="password"
+								name="password"
+								id="password"
+								required
+								class="input input-bordered w-full max-w-sm
                 			invalid:border-pink-rose invalid:text-rose-600
                 			focus:invalid:border-rose-500 focus:invalid:ring-rose-500"
-							placeholder="************"
-						/>
-					</label>
-				</div>
+								placeholder="************"
+							/>
+						</label>
+					</div>
 				</div>
 				<div class="form-control w-full max-w-sm">
 					<div class="tooltip tooltip-top" data-tip="The length must be between 8 and 72.">

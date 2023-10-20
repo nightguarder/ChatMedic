@@ -26,8 +26,10 @@
 		</div>
 		<br />
 		<div class="flex justify-start sm:justify-center">
-			<button class=" btn-primary btn-md md:btn-xl text-white bg-cyan-500 hover:bg-cyan-600"><a href="#team">Team members</a></button>
-			</div>
+			<button class=" btn-primary btn-md md:btn-xl text-white bg-cyan-500 hover:bg-cyan-600"
+				><a href="#team">Team members</a></button
+			>
+		</div>
 	</div>
 	<!-- Text -->
 </section>
