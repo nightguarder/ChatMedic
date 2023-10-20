@@ -37,7 +37,12 @@
 	"type": "module",
 	"dependencies": {
 		"@tailwindcss/forms": "^0.5.3",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.0.0",
 		"daisyui": "^2.51.3",
-		"pocketbase": "^0.13.1"
+		"lucide-react": "^0.288.0",
+		"pocketbase": "^0.13.1",
+		"tailwind-merge": "^1.14.0",
+		"tailwindcss-animate": "^1.0.7"
 	}
 }
