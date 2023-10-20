@@ -2,7 +2,7 @@
 	export let form;
 </script>
 
-<div class="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+<div class="flex min-h-full items-center justify-center py-2 px-4 sm:px-6 lg:px-8">
 	<div class="overflow-hidden sm:w-screen sm:-w-full sm:shadow-xl sm:rounded-lg px-2 py-8 ">
 		<div class="w-full md:w-auto space-y-4">
 			<div class="space-y-3 py-2">

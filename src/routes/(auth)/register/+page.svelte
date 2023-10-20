@@ -2,14 +2,14 @@
 	export let form;
 </script>
 
-<div class="flex min-h-full min-w-full items-center justify-center py-12 px-4 sm:px-8 lg:px-8">
+<div class="flex min-h-full min-w-full items-center justify-center py-2 px-4 sm:px-8 lg:px-8">
 	<div class="overflow-hidden sm:w-screen sm:-w-full sm:shadow-xl sm:rounded-lg px-2 py-8">
 		<div class="w-full md:w-auto space-y-4">
 			<div class="space-y-3">
 				<img
 					class="mx-auto h-12 w-auto"
 					src="https://tailwindui.com/img/logos/mark.svg?color=cyan&shade=600"
-					alt="Your Company"
+					alt="Company logo"
 				/>
 				<h2 class="mt-2 text-center text-3xl font-bold tracking-tight ">Register for an account</h2>
 				<p class="mt-1 text-center text-gray-500">
