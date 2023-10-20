@@ -43,6 +43,7 @@
 		"lucide-react": "^0.288.0",
 		"pocketbase": "^0.13.1",
 		"tailwind-merge": "^1.14.0",
+		"tailwind-variants": "^0.1.14",
 		"tailwindcss-animate": "^1.0.7"
 	}
 }
