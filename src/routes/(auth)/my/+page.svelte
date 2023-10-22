@@ -1,7 +1,11 @@
-<script>
-	export let data;
-	// Get the value of the message from the URL query parameters
+
+<script lang="ts">
+	import Chat from '$lib/components/Chat.svelte';
+	import { nanoid } from '$lib/utils';
+	export let data
+	const id = nanoid();
 </script>
+
 
 <!-- {#if data?.Loggedin}
 <div id="message" class="alert alert-error">

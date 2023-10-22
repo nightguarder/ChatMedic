@@ -1,78 +1,72 @@
-import OpenAI from 'openai';
-import { OpenAIStream, StreamingTextResponse } from 'ai';
-import type { ChatCompletionCreateParams } from 'openai/resources/chat';
-/**
- * CompletionCreateParams
- * @deprecated Use ChatCompletionCreateParams instead
- */
-import { env } from '$env/dynamic/private';
-//??WHAT About Vercel env
 // Hard coded import:
-import { OPENAI_API_KEY } from '$env/static/private'
+import { OPENAI_KEY } from '$env/static/private'
+import { KV } from '$lib/kv';
+import { nanoid } from '$lib/utils';
+import type { Config } from '@sveltejs/adapter-vercel';
+import { OpenAIStream, StreamingTextResponse } from 'ai';
+import { Configuration, OpenAIApi } from 'openai-edge';
 
-const openai = new OpenAI({
-  apiKey: env.OPENAI_API_KEY || '',
-});
+import { env } from '$env/dynamic/private';
+// Your hardcoded OPENAI_KEY in env.local:
+// import { OPENAI_KEY } from '$env/static/private'
 
-const functions: ChatCompletionCreateParams.Function[] = [
-  {
-    name: 'get_current_weather',
-    description: 'Get the current weather',
-    parameters: {
-      type: 'object',
-      properties: {
-        location: {
-          type: 'string',
-          description: 'The city and state, e.g. San Francisco, CA',
-        },
-        format: {
-          type: 'string',
-          enum: ['celsius', 'fahrenheit'],
-          description:
-            'The temperature unit to use. Infer this from the users location.',
-        },
-      },
-      required: ['location', 'format'],
-    },
-  },
-  {
-    name: 'get_current_time',
-    description: 'Get the current time',
-    parameters: {
-      type: 'object',
-      properties: {},
-      required: [],
-    },
-  },
-  {
-    name: 'eval_code_in_browser',
-    description: 'Execute javascript code in the browser with eval().',
-    parameters: {
-      type: 'object',
-      properties: {
-        code: {
-          type: 'string',
-          description: `Javascript code that will be directly executed via eval(). Do not use backticks in your response.
-           DO NOT include any newlines in your response, and be sure to provide only valid JSON when providing the arguments object.
-           The output of the eval() will be returned directly by the function.`,
-        },
-      },
-      required: ['code'],
-    },
-  },
-];
+import type { RequestHandler } from './$types';
 
-export async function POST({ request }) {
-  const { messages, function_call } = await request.json();
+//Adapter-vercel is not needed I guess? 
+export const config: Config = {
+	runtime: 'edge'
+};
+export const POST = (async ({ request, locals: { getSession } }) => {
+	const json = await request.json();
+	const { messages, previewToken } = json;
+	const session = await getSession();
 
-  const response = await openai.chat.completions.create({
-    model: 'gpt-3.5-turbo-0613',
-    stream: true,
-    messages,
-    functions,
-    function_call,
-  });
+	// Create an OpenAI API client
+	const config = new Configuration({
+		apiKey: previewToken || env.OPENAI_API_KEY
+	});
+	const openai = new OpenAIApi(config);
 
-  const stream = OpenAIStream(response);
-  return new StreamingTextResponse(stream);
-}
+	// Ask OpenAI for a streaming chat completion given the prompt
+	const response = await openai.createChatCompletion({
+		model: 'gpt-3.5-turbo',
+		messages,
+		temperature: 0.7,
+		stream: true
+	});
+
+	// Convert the response into a friendly text-stream
+	const stream = OpenAIStream(response, {
+		async onCompletion(completion) {
+			const title = messages[0].content.substring(0, 100);
+			const userId = session?.user?.id;
+			if (userId) {
+				const id = json.id ?? nanoid();
+				const createdAt = Date.now();
+				const path = `/chat/${id}`;
+				const payload = {
+					id,
+					title,
+					userId,
+					createdAt,
+					path,
+					messages: [
+						...messages,
+						{
+							content: completion,
+							role: 'assistant'
+						}
+					]
+				};
+				await KV.hmset(`chat:${id}`, payload);
+				await KV.zadd(`user:chat:${userId}`, {
+					score: createdAt,
+					member: `chat:${id}`
+				});
+			}
+		}
+	});
+
+	// Respond with the stream
+	return new StreamingTextResponse(stream);
+}) satisfies RequestHandler;
