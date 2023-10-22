@@ -47,7 +47,6 @@
 		"openai-edge": "^1.2.2",
 		"pocketbase": "^0.13.1",
 		"sse": "^0.0.8",
-		"tailwind-merge": "^1.14.0",
-		"tailwind-variants": "^0.1.14"
+		"tailwind-merge": "^1.14.0"
 	}
 }

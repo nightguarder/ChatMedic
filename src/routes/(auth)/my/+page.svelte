@@ -1,9 +1,7 @@
 
 <script lang="ts">
 	import Chat from '$lib/components/Chat.svelte';
-	import { nanoid } from '$lib/utils';
 	export let data
-	const id = nanoid();
 </script>
 
 
