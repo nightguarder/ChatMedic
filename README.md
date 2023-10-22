@@ -14,6 +14,11 @@ The current `production version` is available [online](https://chat-medic.vercel
 - The AI model should be as accurate as possible, providing feedback to experts while achieving minimal errors.
 - Model is tested by medical experts and their feedback is used to improve the model.
 
+## ChatAI
+- Logged users with an account can now use the chat treat their patients respectively. 
+- The ChatGPT 3.5 language model is a prototype which will help by answering and providing relevant information about the topic.
+
+![chat-ai](src/lib/img/chat_ai.png)
 ## Developing
 
 The entire project is open source. Providing transparency for easier debuging.
