@@ -1,72 +1,107 @@
-// Hard coded import:
-import { OPENAI_KEY } from '$env/static/private'
-import { KV } from '$lib/kv';
-import { nanoid } from '$lib/utils';
-import type { Config } from '@sveltejs/adapter-vercel';
-import { OpenAIStream, StreamingTextResponse } from 'ai';
-import { Configuration, OpenAIApi } from 'openai-edge';
-
-import { env } from '$env/dynamic/private';
 // Your hardcoded OPENAI_KEY in env.local:
 // import { OPENAI_KEY } from '$env/static/private'
+import { OPENAI_KEY } from '$env/static/private'
 
-import type { RequestHandler } from './$types';
+import type { CreateChatCompletionRequest, ChatCompletionRequestMessage } from 'openai-edge'
 
-//Adapter-vercel is not needed I guess? 
+import type { RequestHandler } from '@sveltejs/kit';
+import { getTokens } from '$lib/tokenizer'
+import { json } from '@sveltejs/kit'
+import type { Config } from '@sveltejs/adapter-vercel'
+
 export const config: Config = {
 	runtime: 'edge'
-};
-export const POST = (async ({ request, locals: { getSession } }) => {
-	const json = await request.json();
-	const { messages, previewToken } = json;
-	const session = await getSession();
+}
 
-	// Create an OpenAI API client
-	const config = new Configuration({
-		apiKey: previewToken || env.OPENAI_API_KEY
-	});
-	const openai = new OpenAIApi(config);
-
-	// Ask OpenAI for a streaming chat completion given the prompt
-	const response = await openai.createChatCompletion({
-		model: 'gpt-3.5-turbo',
-		messages,
-		temperature: 0.7,
-		stream: true
-	});
-
-	// Convert the response into a friendly text-stream
-	const stream = OpenAIStream(response, {
-		async onCompletion(completion) {
-			const title = messages[0].content.substring(0, 100);
-			const userId = session?.user?.id;
-			if (userId) {
-				const id = json.id ?? nanoid();
-				const createdAt = Date.now();
-				const path = `/chat/${id}`;
-				const payload = {
-					id,
-					title,
-					userId,
-					createdAt,
-					path,
-					messages: [
-						...messages,
-						{
-							content: completion,
-							role: 'assistant'
-						}
-					]
-				};
-				await KV.hmset(`chat:${id}`, payload);
-				await KV.zadd(`user:chat:${userId}`, {
-					score: createdAt,
-					member: `chat:${id}`
-				});
-			}
+export const POST: RequestHandler = async ({ request }) => {
+	try {
+		if (!OPENAI_KEY) {
+			throw new Error('OPENAI_KEY env variable not set')
 		}
-	});
 
-	// Respond with the stream
-	return new StreamingTextResponse(stream);
-}) satisfies RequestHandler;
+		const requestData = await request.json()
+
+		if (!requestData) {
+			throw new Error('No request data')
+		}
+
+		const reqMessages: ChatCompletionRequestMessage[] = requestData.messages
+
+		if (!reqMessages) {
+			throw new Error('no messages provided')
+		}
+
+		let tokenCount = 0
+
+		reqMessages.forEach((msg) => {
+			const tokens = getTokens(msg.content)
+			tokenCount += tokens
+		})
+        
+
+		const moderationRes = await fetch('https://api.openai.com/v1/moderations', {
+			headers: {
+				'Content-Type': 'application/json',
+				Authorization: `Bearer ${OPENAI_KEY}`
+			},
+			method: 'POST',
+			body: JSON.stringify({
+				input: reqMessages[reqMessages.length - 1].content
+			})
+		})
+		if (!moderationRes.ok) {
+			const err = await moderationRes.json()
+			throw new Error(err.error.message)
+		}
+
+		const moderationData = await moderationRes.json()
+		const [results] = moderationData.results
+
+		if (results.flagged) {
+			throw new Error('Query flagged by openai')
+		}
+
+		const prompt =
+			'You are a virtual assistant for a company called ChatMedic. Your goal is to help doctors treat their patients.'
+		tokenCount += getTokens(prompt)
+
+		if (tokenCount >= 4000) {
+			throw new Error('Query too large')
+		}
+
+		const messages: ChatCompletionRequestMessage[] = [
+			{ role: 'system', content: prompt },
+			...reqMessages
+		]
+
+		const chatRequestOpts: CreateChatCompletionRequest = {
+			model: 'gpt-3.5-turbo',
+			messages,
+			temperature: 0.9,
+			stream: true
+		}
+
+		const chatResponse = await fetch('https://api.openai.com/v1/chat/completions', {
+			headers: {
+				Authorization: `Bearer ${OPENAI_KEY}`,
+				'Content-Type': 'application/json'
+			},
+			method: 'POST',
+			body: JSON.stringify(chatRequestOpts)
+		})
+
+		if (!chatResponse.ok) {
+			const err = await chatResponse.json()
+			throw new Error(err.error.message)
+		}
+
+		return new Response(chatResponse.body, {
+			headers: {
+				'Content-Type': 'text/event-stream'
+			}
+		})
+	} catch (err) {
+		console.error(err)
+		return json({ error: 'There was an error processing your request' }, { status: 500 })
+	}
+}
