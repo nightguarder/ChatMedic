@@ -15,6 +15,7 @@
 			<div class="navbar-center hidden lg:flex">
 				<ul class="menu menu-horizontal dropdown-content  font-medium px-2 bg-base-100">
 					<li tabindex="-1">
+						<!-- svelte-ignore a11y-missing-attribute -->
 						<a
 							>Menu
 							<svg
