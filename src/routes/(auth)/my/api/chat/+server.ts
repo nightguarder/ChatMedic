@@ -1,7 +1,6 @@
 // Your hardcoded OPENAI_KEY in env.local:
-// import { OPENAI_KEY } from '$env/static/private'
 import  {OPENAI_KEY}  from '$env/static/private'
-
+//import { env } from '$env/dynamic/private';
 import type { CreateChatCompletionRequest, ChatCompletionRequestMessage } from 'openai-edge'
 
 import type { RequestHandler } from '@sveltejs/kit';
@@ -16,7 +15,7 @@ export const config: Config = {
 
 export const POST: RequestHandler = async ({ request }) => {
 	try {
-		if (!OPENAI_KEY) {
+		if (!env.OPENAI_KEY) {
 			throw new Error('OPENAI_KEY env variable not set')
 		}
 
