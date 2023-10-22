@@ -1,5 +1,5 @@
 import { error, redirect } from '@sveltejs/kit';
-import { generateUsername } from '$lib/utils';
+import { generateUsername } from '$lib/crypto';
 
 export const actions = {
 	register: async ({ locals, request }) => {

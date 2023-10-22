@@ -1,4 +1,5 @@
-import adapter from '@sveltejs/adapter-auto';
+
+import adapter from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
 
@@ -14,6 +15,7 @@ const config = {
 		// If your environment is not supported or you settled on a specific environment, switch out the adapter.
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter({
+			runtime: 'nodejs18.x'
 			// rollback to adapter-auto
 			//Don't use adapter-vercel
 		})
