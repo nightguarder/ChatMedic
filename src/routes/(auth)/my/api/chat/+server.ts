@@ -1,6 +1,6 @@
 // Your hardcoded OPENAI_KEY in env.local:
 // import { OPENAI_KEY } from '$env/static/private'
-import { OPENAI_KEY } from '$env/static/private'
+import { OPENAI_KEY } from 'virtual:$env/static/private'
 
 import type { CreateChatCompletionRequest, ChatCompletionRequestMessage } from 'openai-edge'
 
@@ -12,6 +12,7 @@ import type { Config } from '@sveltejs/adapter-vercel'
 export const config: Config = {
 	runtime: 'edge'
 }
+
 
 export const POST: RequestHandler = async ({ request }) => {
 	try {
