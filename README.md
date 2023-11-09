@@ -17,8 +17,8 @@ The current `production version` is available [online](https://chat-medic.vercel
 ## ChatAI
 - Logged users with an account can now use the chat to treat their patients respectively. 
 - The ChatGPT 3.5 language model is a prototype which will help by answering and providing relevant information about the topic.
-
-![chat-ai](src/lib/img/chat_ai.png)
+![chat-ai](src/lib/img/main-chat.png)
+- *Note My GPT API has reached limit. For your usecase please use your own API key.*
 ## Developing
 
 The entire project is open source. Providing transparency for easier debuging.

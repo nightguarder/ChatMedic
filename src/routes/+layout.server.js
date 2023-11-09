@@ -7,10 +7,12 @@ export const load = ({ locals }) => {
 			user: locals.user,
 			name: locals.user.name,
 			firstChar,
-			secondChar
+			secondChar,
+			loggedIn: true
 		};
 	} else
 		return {
-			user: undefined
+			user: undefined,
+			loggedIn: false
 		};
 };

@@ -78,7 +78,7 @@
 </div>
 <!-- CONTAINER -->
 
-<slot />
+<slot></slot>
 
 <!-- Footer -->
 <footer class="footer footer-center p-10 bg-base-200 font-medium text-base rounded">

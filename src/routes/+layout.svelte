@@ -1,5 +1,7 @@
+
 <script>
+	//Default css
 	import '../app.css';
 </script>
-
-<slot />
+<!-- Render the rest of the page -->
+<slot></slot>
